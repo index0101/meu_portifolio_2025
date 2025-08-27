@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gessica Araujo - Design Gráfico & UI/UX</title>
+    <meta name="description" content="Portfólio de Gessica Araujo - Designer Gráfico e UI/UX especializada em criar experiências visuais inovadoras e elegantes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Menu principal">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Página inicial">
+                <span class="logo-text">Géssica Araújo</span>
+            </a>
+            
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" role="menuitem">Sobre</a></li>
+                <li role="none"><a href="#portfolio" role="menuitem">Portfólio</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contato</a></li>
+            </ul>
+            
+            <button class="theme-toggle" aria-label="Alternar tema claro/escuro" id="theme-toggle">
+                <span class="theme-icon">🌙</span>
+            </button>
+            
+            <button class="mobile-menu-toggle" aria-label="Abrir menu mobile" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" role="banner">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Design que</span>
+                    <span class="title-line highlight">Inspira</span>
+                </h1>
+                <p class="hero-subtitle">Criando experiências visuais únicas através do Design Gráfico e UI/UX</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">Ver Portfólio</a>
+                    <a href="#contact" class="btn btn-secondary">Vamos Conversar</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1"></div>
+                <div class="floating-card card-2"></div>
+                <div class="floating-card card-3"></div>
+                <div class="hero-visual">
+    <div class="floating-card card-1" style="background-image: url('images/01.png');"></div>
+    <div class="floating-card card-2" style="background-image: url('images/02.png');"></div>
+    <div class="floating-card card-3" style="background-image: url('images/03.png');"></div>
+</div>
+
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Role para baixo</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+<!-- About Section -->
+<section id="about" class="about" role="main">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="section-title">Sobre Mim</h2>
+            <p class="section-subtitle">Paixão por design e inovação</p>
+        </div>
+
+<!-- About Content -->
+<div class="about-content">
+  
+  <!-- Text Column -->
+  <div class="about-text slide-in-left">
+    <p class="about-description">
+      Sou Gessica Araujo, designer apaixonada por criar experiências visuais que conectam marcas e pessoas. 
+      Com formação em Arquitetura e Urbanismo, Filosofia, Design e Criminologia, trago uma perspectiva única 
+      para cada projeto.
+    </p>
+    <p class="about-description">
+      Atualmente cursando Engenharia de Software e com pós-graduação em Ciências de Dados, 
+      combino criatividade com tecnologia para entregar soluções inovadoras em Design Gráfico e UI/UX.
+    </p>
+
+    <div class="skills-preview fade-in">
+      <div class="skill-tag">Design Gráfico</div>
+      <div class="skill-tag">UI/UX Design</div>
+      <div class="skill-tag">Branding</div>
+      <div class="skill-tag">Ilustração</div>
+    </div>
+  </div>
+
+  <!-- Visual Column -->
+  <div class="about-visual slide-in-right">
+    <div class="profile-card">
+      <div class="profile-image">
+        <img src="images/perfil.jpg" alt="Gessica Araujo">
+      </div>
+
+      <div class="profile-info">
+        <h3>Gessica Araujo</h3>
+        <p>Designer Gráfico & UI/UX</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio" role="main">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Portfólio</h2>
+      <p class="section-subtitle">Projetos que fazem a diferença</p>
+    </div>
+
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="uiux">UI/UX Design</button>
+      <button class="filter-btn" data-filter="graphic">Design Gráfico</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolio-grid">
+      <!-- Portfolio items will be dynamically loaded -->
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact" role="main">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vamos Trabalhar Juntos</h2>
+                <p class="section-subtitle">Transforme sua ideia em realidade</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Entre em Contato</h3>
+                    <p>Estou sempre aberta a novos projetos e colaborações. Vamos conversar sobre como posso ajudar a dar vida às suas ideias.</p>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:simuledesign@gmail.com" class="contact-method">
+                            <span class="contact-icon">📧</span>
+                            <span>simuledesign@gmail.com</span>
+                        </a>
+                        <a href="https://wa.me/5551997806768" class="contact-method" target="_blank">
+                            <span class="contact-icon">📱</span>
+                            <span>+55 51 99780-6768</span>
+                        </a>
+                        <a href="https://www.instagram.com/simuledesign" class="contact-method" target="_blank">
+                            <span class="contact-icon">📷</span>
+                            <span>@simuledesign</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-content">
+      
+      <div class="footer-brand">
+        <h3>Géssica Araújo</h3>
+        <p>Designer Gráfico & UI/UX</p>
+      </div>
+      
+      <div class="footer-social">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/gessica-araujo-uidesign" target="_blank" aria-label="LinkedIn">
+          <img src="assets/linkedin.png" alt="LinkedIn">
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/index0101" target="_blank" aria-label="GitHub">
+          <img src="assets/github.png" alt="GitHub">
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/simuledesign" target="_blank" aria-label="Instagram">
+          <img src="assets/instagram.png" alt="Instagram">
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/555197806768" target="_blank" aria-label="WhatsApp">
+          <img src="assets/whatsapp.png" alt="WhatsApp">
+        </a>
+
+        <!-- E-mail -->
+        <a href="mailto:simuledesign@gmail.com" aria-label="E-mail">
+          <img src="assets/email.png" alt="E-mail">
+        </a>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Desenvolvido com 💜 por Gessica Araujo</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/5551997806768" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Conversar no WhatsApp">
+    <img src="assets/whatsapp.png" alt="WhatsApp">
+</a>
+
+    <!-- Portfolio Modal -->
+    <div class="modal" id="portfolio-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Fechar modal">&times;</button>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
