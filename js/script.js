@@ -3,49 +3,49 @@ const portfolioData = [
     {
         id: 1,
         title: "Dashboard Analytics UI",
-        description: "Interface moderna para dashboard de analytics com foco em usabilidade e visualização de dados.",
+        description: "Interface para dashboard de analytics com foco em usabilidade e visualização de mapa para rastreamento de Mísseis.",
         category: "uiux",
-        image: "images/uiux_example_new1.png",
+        image: "images/missele-dashboard_01.jpg",
         tags: ["UI Design", "UX Research", "Figma"],
         details: {
-            client: "TechCorp Solutions",
-            duration: "3 semanas",
-            tools: ["Figma", "Adobe XD", "Principle"],
+            client: "Thomas Gonzalez Roberts",
+            duration: "4 dias",
+            tools: ["Figma", "Adobe XD", "CorelDraw"],
             challenge: "Criar uma interface intuitiva para visualização de dados complexos",
             solution: "Desenvolvemos um sistema de design consistente com hierarquia visual clara e componentes reutilizáveis.",
-            images: ["images/uiux_example_new1.png", "images/uiux_example_new2.png"]
+            images: ["images/missele-dashboard_01.jpg", "images/missele-dashboard_02.jpg", "images/missele-dashboard_03.jpg", "images/missele-dashboard_04.jpg"]
         }
     },
     {
         id: 2,
-        title: "E-commerce Mobile App",
+        title: "Coffee Mobile App",
         description: "Aplicativo mobile para e-commerce com experiência de compra otimizada e design responsivo.",
         category: "uiux",
         image: "images/uiux_example_new2.png",
         tags: ["Mobile UI", "UX Design", "Prototyping"],
         details: {
-            client: "Fashion Store",
-            duration: "4 semanas",
-            tools: ["Sketch", "InVision", "Zeplin"],
+            client: "Yulia Coffee Shop",
+            duration: "1 semana",
+            tools: ["Figma", "Ilustrator", "Photoshop", "CorelDraw"],
             challenge: "Melhorar a taxa de conversão do app mobile existente",
             solution: "Redesenhamos o fluxo de compra com foco na redução de etapas e melhoria da experiência do usuário.",
-            images: ["images/uiux_example_new2.png", "images/uiux_example_new1.png"]
+            images: ["images/uiux_example_new2.png", "images/uiux_example_new1.png", ],
         }
     },
     {
         id: 3,
-        title: "Identidade Visual Luxury Brand",
-        description: "Desenvolvimento completo de identidade visual para marca de luxo, incluindo logo, paleta e aplicações.",
+        title: "Identidade Visual Ozix",
+        description: "Desenvolvimento completo de identidade visual para marca de micro SaaS, incluindo logo, paleta e aplicações.",
         category: "graphic",
         image: "images/graphic_design_example_new1.jpg",
         tags: ["Branding", "Logo Design", "Identidade Visual"],
         details: {
-            client: "Luxury Boutique",
-            duration: "6 semanas",
-            tools: ["Illustrator", "Photoshop", "InDesign"],
+            client: "Ozix Design SaaS",
+            duration: "1 semana",
+            tools: ["Illustrator", "Photoshop", "InDesign", "CorelDRAW"],
             challenge: "Criar uma identidade que transmitisse elegância e exclusividade",
-            solution: "Desenvolvemos uma marca sofisticada com tipografia elegante e paleta de cores refinada.",
-            images: ["images/graphic_design_example_new1.jpg", "images/graphic_design_example_new2.jpg"]
+            solution: "Desenvolvi uma marca sofisticada/tecnologica com tipografia elegante e paleta de cores refinada.",
+            images: ["images/graphic_design_example_new1.jpg", "images/ozix_design_saas.jpg", "images/ozix_design_saas_02.jpg"]
         }
     },
     {

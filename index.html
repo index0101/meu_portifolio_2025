@@ -72,36 +72,28 @@
 
 <!-- About Section -->
 <section id="about" class="about" role="main">
-    <div class="container">
-        <!-- Section Header -->
-        <div class="section-header">
-            <h2 class="section-title">Sobre Mim</h2>
-            <p class="section-subtitle">Paixão por design e inovação</p>
-        </div>
-
-<!-- About Content -->
-<div class="about-content">
-
-  <!-- Text Column -->
-  <div class="about-text slide-in-left">
-    <!-- Título da seção -->
-    <p class="about-description">
-      Sou Gessica Araujo, designer apaixonada por criar experiências visuais que conectam marcas e pessoas. 
-      Com formação em Arquitetura e Urbanismo, Filosofia, Design e Criminologia, trago uma perspectiva única 
-      para cada projeto.
-    </p>
-    <p class="about-description">
-      Atualmente cursando Engenharia de Software e com pós-graduação em Ciências de Dados, 
-      combino criatividade com tecnologia para entregar soluções inovadoras em Design Gráfico e UI/UX.
-    </p>
-
-    <div class="skills-preview fade-in">
-      <div class="skill-tag">Design Gráfico</div>
-      <div class="skill-tag">UI/UX Design</div>
-      <div class="skill-tag">Branding</div>
-      <div class="skill-tag">Ilustração</div>
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Sobre Mim</h2>
+      <p class="section-subtitle">Paixão por design e inovação</p>
     </div>
-  </div>
+
+    <!-- About Content -->
+    <div class="about-content">
+      <!-- Text Column -->
+      <div class="about-text slide-in-left">
+        <p class="about-description">
+          Com mais de 6 anos de experiência em Design Gráfico e UI/UX, atuo na criação de soluções visuais e digitais inovadoras.
+        </p>
+        <p class="about-description">
+          Minha formação inclui Criminologia (bacharel), 3 anos de Arquitetura, 3 anos de Filosofia, 5 anos de Design e atualmente curso Engenharia de Software.
+        </p>
+      </p>
+        <p class="about-description">
+          Possuo pós-graduação em Ciência e Análise de Dados, unindo criatividade e tecnologia para entregar projetos de alto impacto.
+        </p>
+        <a href="#contact" class="btn btn-primary">Vamos Conversar</a>
+      </div>
 
   <!-- Visual Column -->
   <div class="about-visual slide-in-right">
@@ -112,10 +104,52 @@
 
       <div class="profile-info">
         <h3>Gessica Araujo</h3>
-        <p>Designer Gráfico & UI/UX</p>
+        <p>Designer Gráfico & UI/UX | Data Science</p>
       </div>
     </div>
   </div>
+<!-- fecha about-content -->
+
+
+    <!-- Skills Section (agora embaixo) -->
+    <div class="about-skills">
+      <h3 class="skills-title">Habilidades & Ferramentas</h3>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Design & Criação</h4>
+          <div class="skill-list">
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Illustrator</span>
+            <span class="skill-tag">Photoshop</span>
+            <span class="skill-tag">Adobe XD</span>
+            <span class="skill-tag">CorelDRAW</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Visualização & Modelagem</h4>
+          <div class="skill-list">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">AutoCAD</span>
+            <span class="skill-tag">SketchUp</span>
+            <span class="skill-tag">Blender</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Desenvolvimento & Código</h4>
+          <div class="skill-list">
+            <span class="skill-tag">VSCode</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">AWS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 </div>
 </section>
@@ -173,22 +207,21 @@
             <form class="contact-form" id="contact-form">
                 <div class="form-group">
                     <label for="name">Nome</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="Ex: João Silva" required>
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="Ex: seuemail@dominio.com" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Mensagem</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Descreva seu projeto ou sua dúvida..." required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
             </form>
         </div>
     </div>
 </section>
-
 
 <!-- Footer -->
 <footer class="footer" role="contentinfo">
@@ -197,7 +230,7 @@
       
       <div class="footer-brand">
         <h3>Géssica Araújo</h3>
-        <p>Designer Gráfico & UI/UX</p>
+        <p>Designer Gráfico & UI/UX | Data Science</p>
       </div>
       
       <div class="footer-social">
@@ -205,7 +238,11 @@
         <a href="https://www.linkedin.com/in/gessica-araujo-uidesign" target="_blank" aria-label="LinkedIn">
           <img src="assets/linkedin.png" alt="LinkedIn">
         </a>
-
+        <!-- Upwork -->
+        <a href="https://www.upwork.com/freelancers/~019cc71f003821104b?mp_source=share" 
+        target="_blank" aria-label="Upwork">
+        <img src="assets/upwork.png" alt="Upwork">
+        </a>
         <!-- GitHub -->
         <a href="https://github.com/index0101" target="_blank" aria-label="GitHub">
           <img src="assets/github.png" alt="GitHub">

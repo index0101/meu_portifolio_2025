@@ -317,8 +317,10 @@ body {
 
 .btn-secondary:hover {
     transform: translateY(-2px);
-    box-shadow: var(--glass-shadow);
+    box-shadow: 0 0 10px #8b5cf6; /* brilho roxo */
+    border-color: #8b5cf6;
 }
+
 
 .hero-visual {
     position: relative;
@@ -458,19 +460,99 @@ section {
     gap: 4rem;
     align-items: center;
 }
+/* Card (foto, nome, função) */
+.about-card {
+    grid-column: 1 / 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+    width: 100%;        /* ocupa toda a coluna */
+    max-width: 400px;   /* largura máxima do card */
+    margin: 0 auto;     /* centraliza horizontalmente */
+}
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+/* Imagem do perfil */
+.about-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid var(--primary-color);
+}
+
+/* Nome */
+.about-card h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 0.3rem;
+}
+
+/* Função */
+.about-card p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+/* Texto ao lado (sobre você) */
 .about-description {
+    grid-column: 2 / 3; /* segunda coluna */
     font-size: var(--font-size-lg);
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.7;
 }
 
-.skills-preview {
+/* Skills Section - ocupa toda a largura abaixo */
+.about-skills {
+    grid-column: 1 / -1; /* ocupa as duas colunas do grid */
+    margin-top: 3rem;
+}
+
+.skills-title {
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--text-primary);
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem; /* espaço entre categorias */
+}
+
+.skill-category {
+    flex: 1 1 280px;
+    max-width: 350px;
+    text-align: center;
+}
+
+.skill-category h4 {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--accent-primary);
+}
+
+.skill-list {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-    margin-top: 2rem;
+    justify-content: center;
 }
 
 .skill-tag {
@@ -482,9 +564,18 @@ section {
     border-radius: var(--radius-full);
     font-size: var(--font-size-sm);
     font-weight: 500;
-    color: var(--accent-primary);
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
 }
 
+.skill-tag:hover {
+    background: var(--accent-primary);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+/* Profile Card */
 .profile-card {
     background: var(--glass-bg);
     backdrop-filter: var(--glass-backdrop);
@@ -506,18 +597,19 @@ section {
     height: 120px;
     border-radius: var(--radius-full);
     margin: 0 auto 1.5rem;
-    overflow: hidden; /* garante que a imagem fique redonda */
+    overflow: hidden;
     position: relative;
-    background: none; /* remove o gradiente */
+    background: none;
 }
 
 .profile-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* mantém proporção */
+    object-fit: cover;
 }
+
 .profile-image::after {
-    content: none; /* remove o emoji */
+    content: none;
 }
 
 .profile-info h3 {
@@ -661,6 +753,15 @@ section {
     font-size: var(--font-size-xs);
     font-weight: 500;
 }
+.fade-in {
+    opacity: 0;
+    transform: translateX(50px); /* começa 50px à direita */
+    transition: all 0.6s ease-out; /* animação suave */
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateX(0); /* volta à posição original */
+}
 
 /* Contact Section */
 .contact {
@@ -716,16 +817,17 @@ section {
     background: var(--glass-bg);
     backdrop-filter: var(--glass-backdrop);
     -webkit-backdrop-filter: var(--glass-backdrop);
-    border: 1px solid #9166F7; /* cor da borda atualizada */
+    border: 1px solid #8b5cf6; /* 🔥 borda roxa fixa */
     border-radius: 999px; /* totalmente arredondado */
     text-decoration: none;
     color: var(--text-primary);
-    transition: all var(--transition-fast);
+    transition: all 0.3s ease; /* anima suavemente */
 }
 
 .contact-method:hover {
-    transform: translateX(10px);
-    box-shadow: var(--glass-shadow);
+    transform: translateY(-2px); /* mesmo efeito do btn-secondary */
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.6); /* brilho roxo suave */
+    border-color: #8b5cf6;
 }
 
 /* Ícones usando PNGs do footer */
@@ -771,49 +873,56 @@ section {
     margin-bottom: 1.5rem;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    color: var(--text-primary);
-}
-
 /* Inputs de nome e email totalmente arredondados */
 .form-group input {
     width: 100%;
     padding: 0.875rem 1rem;
     border: 1px solid var(--glass-border);
-    border-radius: 999px; /* bordas totalmente arredondadas */
+    border-radius: 999px; /* totalmente arredondados */
     background: var(--glass-bg);
     backdrop-filter: var(--glass-backdrop);
     -webkit-backdrop-filter: var(--glass-backdrop);
     color: var(--text-primary);
     font-size: var(--font-size-base);
-    transition: all var(--transition-fast);
+    transition: all 0.3s ease;
 }
 
-/* Mantém textarea da mensagem com borda atual */
+/* Textarea (mantém bordas suaves originais) */
 .form-group textarea {
     width: 100%;
     padding: 0.875rem 1rem;
     border: 1px solid var(--glass-border);
-    border-radius: var(--radius-lg); /* mantém o arredondamento original */
+    border-radius: var(--radius-lg); /* não arredonda demais */
     background: var(--glass-bg);
     backdrop-filter: var(--glass-backdrop);
     -webkit-backdrop-filter: var(--glass-backdrop);
     color: var(--text-primary);
     font-size: var(--font-size-base);
-    transition: all var(--transition-fast);
+    transition: all 0.3s ease;
     resize: vertical;
     min-height: 120px;
 }
 
-.form-group input:focus,
+/* Efeito ao passar o mouse */
+.form-group input:hover,
+.form-group textarea:hover {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 12px rgba(139, 92, 246, 0.4);
+}
+
+/* Efeito ao clicar/focar */
+.form-group input:focus {
+    outline: none;
+    border-color: #8b5cf6;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+}
+
 .form-group textarea:focus {
     outline: none;
     border-color: var(--accent-primary);
     box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
 }
+
 
 /* Footer */
 .footer {
@@ -1165,4 +1274,35 @@ section {
 
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+/* Ajuste do grid para responsividade */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr; /* 1 coluna */
+        gap: 2rem;
+    }
+
+    .about-card {
+        max-width: 90%;    /* ocupa menos espaço */
+        margin: 0 auto;    /* centraliza */
+        padding: 1.5rem;
+    }
+
+    .about-card img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-card {
+        max-width: 90%;
+        padding: 1rem;
+    }
+
+    .about-card img {
+        width: 80px;
+        height: 80px;
+    }
 }
