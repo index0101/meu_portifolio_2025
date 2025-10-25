@@ -780,3 +780,65 @@ criticalImages.forEach(src => {
 
 console.log('🎨 Gessica Design Portfolio - Loaded successfully!');
 
+// Função para compartilhamento nas redes sociais
+function initSocialShare() {
+    // Obter a URL atual da página
+    const currentUrl = encodeURIComponent(window.location.href);
+    const pageTitle = encodeURIComponent(document.title);
+    const shareText = encodeURIComponent("Confira o incrível portfólio de Gessica Araujo - Designer UI/UX, Design Gráfico e Data Science!");
+    
+    // Configurar URLs de compartilhamento
+    const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
+    const twitterShareUrl = `https://twitter.com/intent/tweet?url=${currentUrl}&text=${shareText}`;
+    const linkedinShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`;
+    
+    // Atribuir URLs aos botões
+    const facebookBtn = document.getElementById('share-facebook');
+    const twitterBtn = document.getElementById('share-twitter');
+    const linkedinBtn = document.getElementById('share-linkedin');
+    
+    if (facebookBtn) facebookBtn.href = facebookShareUrl;
+    if (twitterBtn) twitterBtn.href = twitterShareUrl;
+    if (linkedinBtn) linkedinBtn.href = linkedinShareUrl;
+    
+    // Adicionar eventos de clique para abrir em nova janela
+    const shareButtons = document.querySelectorAll('.share-btn');
+    
+    shareButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Abrir janela de compartilhamento
+            const shareUrl = this.href;
+            const windowFeatures = 'width=600,height=400,location=no,menubar=no,toolbar=no,status=no';
+            window.open(shareUrl, 'Compartilhar', windowFeatures);
+            
+            // Feedback visual (opcional)
+            showShareFeedback(this);
+        });
+    });
+}
+
+// Função para mostrar feedback visual ao compartilhar
+function showShareFeedback(button) {
+    const originalBackground = button.style.backgroundColor;
+    const platform = button.classList.contains('facebook') ? 'Facebook' : 
+                    button.classList.contains('twitter') ? 'Twitter' : 'LinkedIn';
+    
+    // Efeito visual de confirmação
+    button.style.transform = 'scale(0.95)';
+    button.style.backgroundColor = '#27ae60'; // Verde de confirmação
+    
+    setTimeout(() => {
+        button.style.transform = '';
+        button.style.backgroundColor = originalBackground;
+    }, 300);
+    
+    // Log no console para debug
+    console.log(`Compartilhando no ${platform}`);
+}
+
+// Inicializar quando o DOM estiver carregado
+document.addEventListener('DOMContentLoaded', function() {
+    initSocialShare();
+});
