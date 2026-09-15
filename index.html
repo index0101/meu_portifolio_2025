@@ -40,7 +40,7 @@
     <nav class="navbar glass" role="navigation" aria-label="Menu principal">
         <div class="nav-container">
             <a href="#home" class="nav-logo" aria-label="Página inicial">
-                <span class="logo-text">Géssica Araújo</span>
+                <img class="brand-logo" src="images/Black_Vert_.png" alt="Gessica Araujo">
             </a>
             
             <ul class="nav-menu" role="menubar">
@@ -94,9 +94,7 @@
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="floating-card card-1" style="background-image: url('images/01.png');"></div>
-                <div class="floating-card card-2" style="background-image: url('images/02.png');"></div>
-                <div class="floating-card card-3" style="background-image: url('images/03.png');"></div>
+                <img class="hero-main-image" src="images/imagehomenew.png" alt="Arte editorial da Home do portfolio Gessica Design">
             </div>
         </div>
         <div class="scroll-indicator">
@@ -128,16 +126,7 @@
                 </div>
 
                 <div class="about-visual slide-in-right">
-                    <div class="profile-card glass">
-                        <div class="profile-image">
-                            <img src="images/perfil.jpg" alt="Gessica Araujo">
-                        </div>
-                        <div class="profile-info">
-                            <h3>Gessica Araujo</h3>
-                            <p data-pt="Designer Gráfico & UI/UX | Data Science | PT-EN -ES" data-en="Graphic Designer & UI/UX | Data Science
-                            \PT-EN -ES">Designer Gráfico & UI/UX | Data Science</p>
-                        </div>
-                    </div>
+                    <img class="about-main-image" src="images/newperfil.png" alt="Gessica Araujo">
                 </div>
             </div>
 
@@ -195,8 +184,12 @@
                 <button class="filter-btn" data-filter="graphic" data-pt="Design Gráfico" data-en="Graphic Design">Design Gráfico</button>
             </div>
 
-            <div class="portfolio-grid" id="portfolio-grid">
-                <!-- Portfolio items will be dynamically loaded -->
+            <div class="portfolio-carousel">
+                <button class="portfolio-nav portfolio-nav-prev" type="button" aria-label="Projetos anteriores">‹</button>
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Portfolio items will be dynamically loaded -->
+                </div>
+                <button class="portfolio-nav portfolio-nav-next" type="button" aria-label="Próximos projetos">›</button>
             </div>
         </div>
     </section>
@@ -296,7 +289,17 @@
                         <label for="message" data-pt="Mensagem" data-en="Message">Mensagem</label>
                         <textarea id="message" name="message" rows="5" placeholder="Descreva seu projeto ou sua dúvida..." data-pt="Descreva seu projeto ou sua dúvida..." data-en="Describe your project or question..." required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" data-pt="Enviar Mensagem" data-en="Send Message">Enviar Mensagem</button>
+                    <div class="form-send-label" data-pt="Enviar mensagem por:" data-en="Send message via:">Enviar mensagem por:</div>
+                    <div class="contact-send-options">
+                        <button type="button" class="contact-option-btn whatsapp-option" data-action="whatsapp" aria-label="Enviar por WhatsApp">
+                            <img src="assets/whatsapp.png" alt="WhatsApp" class="contact-option-icon">
+                            <span>WhatsApp</span>
+                        </button>
+                        <button type="button" class="contact-option-btn email-option" data-action="email" aria-label="Enviar por e-mail">
+                            <img src="assets/email.png" alt="E-mail" class="contact-option-icon">
+                            <span>E-mail</span>
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -334,7 +337,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p data-pt="&copy; 2024 Desenvolvido com 💜 por Gessica Araujo" data-en="&copy; 2024 Developed with 💜 by Gessica Araujo">&copy; 2024 Desenvolvido com 💜 por Gessica Araujo</p>
+                <p data-pt="&copy; 2026 Desenvolvido com 💜 por Gessica Araujo" data-en="&copy; 2024 Developed with 💜 by Gessica Araujo">&copy; 2024 Desenvolvido com 💜 por Gessica Araujo</p>
             </div>
         </div>
     </footer>

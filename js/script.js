@@ -2,68 +2,483 @@
 const portfolioData = [
     {
         id: 1,
-        title: "Dashboard Analytics UI",
-        description: "Interface para dashboard de analytics com foco em usabilidade e visualização de mapa para rastreamento de Mísseis.",
-        category: "uiux",
-        image: "images/missele-dashboard_01.jpg",
-        tags: ["UI Design", "UX Research", "Figma"],
+        category: 'uiux',
+        image: 'images/missele-dashboard_01.jpg',
+        tags: ['UI Design', 'UX Research', 'Figma'],
+        translations: {
+            pt: {
+                title: 'Dashboard Analytics UI',
+                description: 'Interface para dashboard de analytics com foco em usabilidade e visualização de mapa para rastreamento de mísseis.',
+                category: 'UI/UX Design',
+                tags: ['UI Design', 'UX Research', 'Figma'],
+                client: 'Thomas Gonzalez Roberts',
+                duration: '4 dias',
+                tools: ['Figma', 'Adobe XD', 'CorelDraw'],
+                challenge: 'Criar uma interface intuitiva para visualização de dados complexos.',
+                solution: 'Desenvolvemos um sistema de design consistente com hierarquia visual clara e componentes reutilizáveis.',
+                button: 'Ver Detalhes'
+            },
+            en: {
+                title: 'Dashboard Analytics UI',
+                description: 'Analytics dashboard interface focused on usability and map visualization for missile tracking.',
+                category: 'UI/UX Design',
+                tags: ['UI Design', 'UX Research', 'Figma'],
+                client: 'Thomas Gonzalez Roberts',
+                duration: '4 days',
+                tools: ['Figma', 'Adobe XD', 'CorelDraw'],
+                challenge: 'Create an intuitive interface for complex data visualization.',
+                solution: 'We developed a consistent design system with clear visual hierarchy and reusable components.',
+                button: 'View Details'
+            }
+        },
         details: {
-            client: "Thomas Gonzalez Roberts",
-            duration: "4 dias",
-            tools: ["Figma", "Adobe XD", "CorelDraw"],
-            challenge: "Criar uma interface intuitiva para visualização de dados complexos",
-            solution: "Desenvolvemos um sistema de design consistente com hierarquia visual clara e componentes reutilizáveis.",
-            images: ["images/missele-dashboard_01.jpg", "images/missele-dashboard_02.jpg", "images/missele-dashboard_03.jpg", "images/missele-dashboard_04.jpg"]
+            client: 'Thomas Gonzalez Roberts',
+            duration: { pt: '4 dias', en: '4 days' },
+            tools: ['Figma', 'Adobe XD', 'CorelDraw'],
+            challenge: { pt: 'Criar uma interface intuitiva para visualização de dados complexos.', en: 'Create an intuitive interface for complex data visualization.' },
+            solution: { pt: 'Desenvolvemos um sistema de design consistente com hierarquia visual clara e componentes reutilizáveis.', en: 'We developed a consistent design system with clear visual hierarchy and reusable components.' },
+            images: ['images/missele-dashboard_01.jpg', 'images/missele-dashboard_02.jpg', 'images/missele-dashboard_03.jpg', 'images/missele-dashboard_04.jpg']
         }
     },
     {
         id: 2,
-        title: "Coffee Mobile App",
-        description: "Aplicativo mobile para e-commerce com experiência de compra otimizada e design responsivo.",
-        category: "uiux",
-        image: "images/uiux_example_new2.png",
-        tags: ["Mobile UI", "UX Design", "Prototyping"],
+        category: 'uiux',
+        image: 'images/uiux_example_new2.png',
+        tags: ['Mobile UI', 'UX Design', 'Prototyping'],
+        translations: {
+            pt: {
+                title: 'Coffee Mobile App',
+                description: 'Aplicativo mobile para e-commerce com experiência de compra otimizada e design responsivo.',
+                category: 'UI/UX Design',
+                tags: ['Mobile UI', 'UX Design', 'Prototyping'],
+                client: 'Yulia Coffee Shop',
+                duration: '1 semana',
+                tools: ['Figma', 'Illustrator', 'Photoshop', 'CorelDraw'],
+                challenge: 'Melhorar a taxa de conversão do app mobile existente.',
+                solution: 'Redesenhamos o fluxo de compra com foco na redução de etapas e melhoria da experiência do usuário.',
+                button: 'Ver Detalhes'
+            },
+            en: {
+                title: 'Coffee Mobile App',
+                description: 'Mobile commerce app with an optimized buying experience and responsive design.',
+                category: 'UI/UX Design',
+                tags: ['Mobile UI', 'UX Design', 'Prototyping'],
+                client: 'Yulia Coffee Shop',
+                duration: '1 week',
+                tools: ['Figma', 'Illustrator', 'Photoshop', 'CorelDraw'],
+                challenge: 'Improve conversion rates in the existing mobile app.',
+                solution: 'We redesigned the purchase flow to reduce friction and enhance the user experience.',
+                button: 'View Details'
+            }
+        },
         details: {
-            client: "Yulia Coffee Shop",
-            duration: "1 semana",
-            tools: ["Figma", "Ilustrator", "Photoshop", "CorelDraw"],
-            challenge: "Melhorar a taxa de conversão do app mobile existente",
-            solution: "Redesenhamos o fluxo de compra com foco na redução de etapas e melhoria da experiência do usuário.",
-            images: ["images/uiux_example_new2.png", "images/uiux_example_new1.png"],
-            // INSTRUÇÕES PARA EDIÇÃO: Para adicionar vídeo, use a propriedade 'video' com o caminho do arquivo
-            video: "videos/coffeeapp-Opera2025-09-1218-29-04.mp4" // Vídeo do projeto Coffee Bar
+            client: 'Yulia Coffee Shop',
+            duration: { pt: '1 semana', en: '1 week' },
+            tools: ['Figma', 'Illustrator', 'Photoshop', 'CorelDraw'],
+            challenge: { pt: 'Melhorar a taxa de conversão do app mobile existente.', en: 'Improve conversion rates in the existing mobile app.' },
+            solution: { pt: 'Redesenhamos o fluxo de compra com foco na redução de etapas e melhoria da experiência do usuário.', en: 'We redesigned the purchase flow to reduce friction and enhance the user experience.' },
+            images: ['images/uiux_example_new2.png', 'images/uiux_example_new1.png'],
+            video: 'videos/coffeeapp-Opera2025-09-1218-29-04.mp4'
         }
     },
     {
         id: 3,
-        title: "Identidade Visual Ozix",
-        description: "Desenvolvimento completo de identidade visual para marca de micro SaaS, incluindo logo, paleta e aplicações.",
-        category: "graphic",
-        image: "images/graphic_design_example_new1.jpg",
-        tags: ["Branding", "Logo Design", "Identidade Visual"],
+        category: 'graphic',
+        image: 'images/graphic_design_example_new1.jpg',
+        tags: ['Branding', 'Logo Design', 'Identidade Visual'],
+        translations: {
+            pt: {
+                title: 'Identidade Visual Ozix',
+                description: 'Desenvolvimento completo de identidade visual para marca de micro SaaS, incluindo logo, paleta e aplicações.',
+                category: 'Design Gráfico',
+                tags: ['Branding', 'Logo Design', 'Identidade Visual'],
+                client: 'Ozix Design SaaS',
+                duration: '1 semana',
+                tools: ['Illustrator', 'Photoshop', 'InDesign', 'CorelDRAW'],
+                challenge: 'Criar uma identidade que transmitisse elegância e exclusividade.',
+                solution: 'Desenvolvi uma marca sofisticada e tecnológica com tipografia elegante e paleta de cores refinada.',
+                button: 'Ver Detalhes'
+            },
+            en: {
+                title: 'Ozix Visual Identity',
+                description: 'Complete visual identity development for a micro SaaS brand, including logo, palette and applications.',
+                category: 'Graphic Design',
+                tags: ['Branding', 'Logo Design', 'Visual Identity'],
+                client: 'Ozix Design SaaS',
+                duration: '1 week',
+                tools: ['Illustrator', 'Photoshop', 'InDesign', 'CorelDRAW'],
+                challenge: 'Create an identity that conveyed elegance and exclusivity.',
+                solution: 'I developed a refined, sophisticated brand with elegant typography and a polished color palette.',
+                button: 'View Details'
+            }
+        },
         details: {
-            client: "Ozix Design SaaS",
-            duration: "1 semana",
-            tools: ["Illustrator", "Photoshop", "InDesign", "CorelDRAW"],
-            challenge: "Criar uma identidade que transmitisse elegância e exclusividade",
-            solution: "Desenvolvi uma marca sofisticada/tecnologica com tipografia elegante e paleta de cores refinada.",
-            images: ["images/graphic_design_example_new1.jpg", "images/ozix_design_saas.jpg", "images/ozix_design_saas_02.jpg"]
+            client: 'Ozix Design SaaS',
+            duration: { pt: '1 semana', en: '1 week' },
+            tools: ['Illustrator', 'Photoshop', 'InDesign', 'CorelDRAW'],
+            challenge: { pt: 'Criar uma identidade que transmitisse elegância e exclusividade.', en: 'Create an identity that conveyed elegance and exclusivity.' },
+            solution: { pt: 'Desenvolvi uma marca sofisticada e tecnológica com tipografia elegante e paleta de cores refinada.', en: 'I developed a refined, sophisticated brand with elegant typography and a polished color palette.' },
+            images: ['images/graphic_design_example_new1.jpg', 'images/ozix_design_saas.jpg', 'images/ozix_design_saas_02.jpg']
         }
     },
     {
         id: 4,
-        title: "Car Graphics Showcase",
-        description: "Criação de artes digitais destacando carros esportivos de forma moderna e impactante.",
-        category: "graphic",
-        image: "images/01.jpg",
-        tags: ["Graphic Design", "Car Design", "Social Midia"],
+        category: 'graphic',
+        image: 'images/01.jpg',
+        tags: ['Graphic Design', 'Car Design', 'Social Media'],
+        translations: {
+            pt: {
+                title: 'Car Graphics Showcase',
+                description: 'Criação de artes digitais destacando carros esportivos de forma moderna e impactante.',
+                category: 'Design Gráfico',
+                tags: ['Graphic Design', 'Car Design', 'Social Media'],
+                client: 'Speed Car',
+                duration: '1 dia',
+                tools: ['Illustrator', 'Figma', 'CorelDraw'],
+                challenge: 'Transmitir velocidade e elegância em imagens atrativas para portfólio e redes sociais.',
+                solution: 'Desenvolvi composições dinâmicas com cores e contrastes que valorizam o design dos veículos.',
+                button: 'Ver Detalhes'
+            },
+            en: {
+                title: 'Car Graphics Showcase',
+                description: 'Digital art created to highlight sports cars in a modern and impactful way.',
+                category: 'Graphic Design',
+                tags: ['Graphic Design', 'Car Design', 'Social Media'],
+                client: 'Speed Car',
+                duration: '1 day',
+                tools: ['Illustrator', 'Figma', 'CorelDraw'],
+                challenge: 'Communicate speed and elegance through engaging visuals for portfolio and social media.',
+                solution: 'I developed dynamic compositions using contrast and color to elevate the vehicle design.',
+                button: 'View Details'
+            }
+        },
         details: {
-            client: "Speed Car",
-            duration: "1 dia",
-            tools: ["Illustrator", "Figma", "CorelDraw" ],
-            challenge: "Transmitir velocidade e elegância em imagens atrativas para portfólio e redes sociais.",
-            solution: "Desenvolvi composições dinâmicas com cores e contrastes que valorizam o design dos veículos.",
-            images: ["images/01.jpg", "images/02.jpg","images/03.jpg"]
+            client: 'Speed Car',
+            duration: { pt: '1 dia', en: '1 day' },
+            tools: ['Illustrator', 'Figma', 'CorelDraw'],
+            challenge: { pt: 'Transmitir velocidade e elegância em imagens atrativas para portfólio e redes sociais.', en: 'Communicate speed and elegance through engaging visuals for portfolio and social media.' },
+            solution: { pt: 'Desenvolvi composições dinâmicas com cores e contrastes que valorizam o design dos veículos.', en: 'I developed dynamic compositions using contrast and color to elevate the vehicle design.' },
+            images: ['images/01.jpg', 'images/02.jpg', 'images/03.jpg']
+        }
+    },
+    {
+        id: 5,
+        category: 'uiux',
+        image: 'images/uiux_example_new1.png',
+        tags: ['UX Strategy', 'Dashboard', 'Prototype'],
+        translations: {
+            pt: {
+                title: 'Painel de Gestão SaaS',
+                description: 'Experiência de usuário para painel administrativo com métricas, relatórios e visão de performance.',
+                category: 'UI/UX Design',
+                tags: ['UX Strategy', 'Dashboard', 'Prototype'],
+                client: 'Nova Metrics',
+                duration: '2 semanas',
+                tools: ['Figma', 'Notion', 'Illustrator'],
+                challenge: 'Organizar dados complexos em uma interface clara e estratégica.',
+                solution: 'Estruturei painéis e fluxos com foco em leitura rápida e decisões inteligentes.',
+                button: 'Ver Detalhes'
+            },
+            en: {
+                title: 'SaaS Management Dashboard',
+                description: 'User experience for an admin dashboard featuring metrics, reports, and performance insights.',
+                category: 'UI/UX Design',
+                tags: ['UX Strategy', 'Dashboard', 'Prototype'],
+                client: 'Nova Metrics',
+                duration: '2 weeks',
+                tools: ['Figma', 'Notion', 'Illustrator'],
+                challenge: 'Organize complex data in a clear and strategic interface.',
+                solution: 'I structured dashboards and flows focused on quick reading and smart decision-making.',
+                button: 'View Details'
+            }
+        },
+        details: {
+            client: 'Nova Metrics',
+            duration: { pt: '2 semanas', en: '2 weeks' },
+            tools: ['Figma', 'Notion', 'Illustrator'],
+            challenge: { pt: 'Organizar dados complexos em uma interface clara e estratégica.', en: 'Organize complex data in a clear and strategic interface.' },
+            solution: { pt: 'Estruturei painéis e fluxos com foco em leitura rápida e decisões inteligentes.', en: 'I structured dashboards and flows focused on quick reading and smart decision-making.' },
+            images: ['images/uiux_example_new1.png', 'images/graphic_design_example_new2.jpg']
+        }
+    },
+    {
+        id: 6,
+        category: 'graphic',
+        image: 'images/graphic_design_example_new2.jpg',
+        tags: ['Editorial', 'Branding', 'Photography'],
+        translations: {
+            pt: {
+                title: 'Campanha Editorial',
+                description: 'Campanha visual editorial com linguagem sofisticada e direção criativa para publicação digital.',
+                category: 'Design Gráfico',
+                tags: ['Editorial', 'Branding', 'Photography'],
+                client: 'Studio Vela',
+                duration: '3 dias',
+                tools: ['Photoshop', 'Illustrator', 'InDesign'],
+                challenge: 'Criar um conjunto visual impactante com consistência editorial.',
+                solution: 'Desenvolvi sequência visual, hierarquia e materiais que ampliaram o storytelling da marca.',
+                button: 'Ver Detalhes'
+            },
+            en: {
+                title: 'Editorial Campaign',
+                description: 'Visual editorial campaign with a sophisticated language and creative direction for digital publication.',
+                category: 'Graphic Design',
+                tags: ['Editorial', 'Branding', 'Photography'],
+                client: 'Studio Vela',
+                duration: '3 days',
+                tools: ['Photoshop', 'Illustrator', 'InDesign'],
+                challenge: 'Create a visually strong set with consistent editorial language.',
+                solution: 'I developed a visual sequence, hierarchy, and assets that amplified the brand storytelling.',
+                button: 'View Details'
+            }
+        },
+        details: {
+            client: 'Studio Vela',
+            duration: { pt: '3 dias', en: '3 days' },
+            tools: ['Photoshop', 'Illustrator', 'InDesign'],
+            challenge: { pt: 'Criar um conjunto visual impactante com consistência editorial.', en: 'Create a visually strong set with consistent editorial language.' },
+            solution: { pt: 'Desenvolvi sequência visual, hierarquia e materiais que ampliaram o storytelling da marca.', en: 'I developed a visual sequence, hierarchy, and assets that amplified the brand storytelling.' },
+            images: ['images/graphic_design_example_new2.jpg', 'images/02.jpg', 'images/03.jpg']
+        }
+    },
+    {
+        id: 7,
+        category: 'uiux',
+        image: 'images/02.png',
+        tags: ['UX Writing', 'Mobile', 'Conversion'],
+        translations: {
+            pt: {
+                title: 'App de Reservas',
+                description: 'Fluxo de reserva mobile com foco em clareza, conversão e experiência emocional.',
+                category: 'UI/UX Design',
+                tags: ['UX Writing', 'Mobile', 'Conversion'],
+                client: 'Luma Studio',
+                duration: '10 dias',
+                tools: ['Figma', 'Miro', 'Photoshop'],
+                challenge: 'Simplificar a jornada de agendamento e aumentar a confiança do usuário.',
+                solution: 'Redesenhei a experiência com menos etapas, mais clareza visual e microinterações suaves.',
+                button: 'Ver Detalhes'
+            },
+            en: {
+                title: 'Booking App',
+                description: 'Mobile booking flow focused on clarity, conversion, and emotional experience.',
+                category: 'UI/UX Design',
+                tags: ['UX Writing', 'Mobile', 'Conversion'],
+                client: 'Luma Studio',
+                duration: '10 days',
+                tools: ['Figma', 'Miro', 'Photoshop'],
+                challenge: 'Simplify the scheduling journey and increase user confidence.',
+                solution: 'I redesigned the experience with fewer steps, clearer visuals, and smoother microinteractions.',
+                button: 'View Details'
+            }
+        },
+        details: {
+            client: 'Luma Studio',
+            duration: { pt: '10 dias', en: '10 days' },
+            tools: ['Figma', 'Miro', 'Photoshop'],
+            challenge: { pt: 'Simplificar a jornada de agendamento e aumentar a confiança do usuário.', en: 'Simplify the scheduling journey and increase user confidence.' },
+            solution: { pt: 'Redesenhei a experiência com menos etapas, mais clareza visual e microinterações suaves.', en: 'I redesigned the experience with fewer steps, clearer visuals, and smoother microinteractions.' },
+            images: ['images/02.png', 'images/uiux_example_new2.png']
+        }
+    },
+    {
+        id: 8,
+        category: 'graphic',
+        image: 'images/03.png',
+        tags: ['Packaging', 'Brand System', 'Print'],
+        translations: {
+            pt: {
+                title: 'Sistema de Embalagem',
+                description: 'Criação de um sistema de embalagem com linguagem premium e impacto visual funcional.',
+                category: 'Design Gráfico',
+                tags: ['Packaging', 'Brand System', 'Print'],
+                client: 'Aster Atelier',
+                duration: '5 dias',
+                tools: ['Illustrator', 'Photoshop', 'InDesign'],
+                challenge: 'Equilibrar identidade premium com funcionalidade e produção imprime.',
+                solution: 'Desenvolvi uma identidade visual consistente para diferentes aplicações e materiais.',
+                button: 'Ver Detalhes'
+            },
+            en: {
+                title: 'Packaging System',
+                description: 'Packaging system development with a premium language and functional visual impact.',
+                category: 'Graphic Design',
+                tags: ['Packaging', 'Brand System', 'Print'],
+                client: 'Aster Atelier',
+                duration: '5 days',
+                tools: ['Illustrator', 'Photoshop', 'InDesign'],
+                challenge: 'Balance premium identity with functionality and print production.',
+                solution: 'I developed a consistent visual identity for multiple applications and materials.',
+                button: 'View Details'
+            }
+        },
+        details: {
+            client: 'Aster Atelier',
+            duration: { pt: '5 dias', en: '5 days' },
+            tools: ['Illustrator', 'Photoshop', 'InDesign'],
+            challenge: { pt: 'Equilibrar identidade premium com funcionalidade e produção imprime.', en: 'Balance premium identity with functionality and print production.' },
+            solution: { pt: 'Desenvolvi uma identidade visual consistente para diferentes aplicações e materiais.', en: 'I developed a consistent visual identity for multiple applications and materials.' },
+            images: ['images/03.png', 'images/graphic_design_example_new1.jpg']
+        }
+    },
+    {
+        id: 9,
+        category: 'uiux',
+        image: 'images/01.png',
+        tags: ['Landing Page', 'UX', 'Research'],
+        translations: {
+            pt: {
+                title: 'Landing Page de Produto',
+                description: 'Página promocional para lançamento de produto com narrativa forte e conversão visual.',
+                category: 'UI/UX Design',
+                tags: ['Landing Page', 'UX', 'Research'],
+                client: 'North Studio',
+                duration: '6 dias',
+                tools: ['Figma', 'Illustrator', 'Photoshop'],
+                challenge: 'Criar uma experiência clara e emocionante para conversão de leads.',
+                solution: 'Estruturei blocos narrativos, visuais e hierarquias que guiaram a jornada do usuário.',
+                button: 'Ver Detalhes'
+            },
+            en: {
+                title: 'Product Landing Page',
+                description: 'Promotional page for a product launch with a strong narrative and visual conversion.',
+                category: 'UI/UX Design',
+                tags: ['Landing Page', 'UX', 'Research'],
+                client: 'North Studio',
+                duration: '6 days',
+                tools: ['Figma', 'Illustrator', 'Photoshop'],
+                challenge: 'Create a clear and exciting experience to improve lead conversion.',
+                solution: 'I structured narrative blocks, visuals, and hierarchy to guide the user journey.',
+                button: 'View Details'
+            }
+        },
+        details: {
+            client: 'North Studio',
+            duration: { pt: '6 dias', en: '6 days' },
+            tools: ['Figma', 'Illustrator', 'Photoshop'],
+            challenge: { pt: 'Criar uma experiência clara e emocionante para conversão de leads.', en: 'Create a clear and exciting experience to improve lead conversion.' },
+            solution: { pt: 'Estruturei blocos narrativos, visuais e hierarquias que guiaram a jornada do usuário.', en: 'I structured narrative blocks, visuals, and hierarchy to guide the user journey.' },
+            images: ['images/01.png', 'images/missele-dashboard_01.jpg']
+        }
+    },
+    {
+        id: 10,
+        category: 'graphic',
+        image: 'images/02.jpg',
+        tags: ['Art Direction', 'Campaign', 'Brand'],
+        translations: {
+            pt: {
+                title: 'Arte de Campanha',
+                description: 'Direção visual para campanha digital com proposta editorial e forte presença de marca.',
+                category: 'Design Gráfico',
+                tags: ['Art Direction', 'Campaign', 'Brand'],
+                client: 'Mira Co.',
+                duration: '4 dias',
+                tools: ['Photoshop', 'Illustrator', 'Figma'],
+                challenge: 'Unificar identidade, narrativa e diferentes formatos em uma campanha coesa.',
+                solution: 'Desenvolvi um sistema visual modular com aplicação em web, redes e materiais digitais.',
+                button: 'Ver Detalhes'
+            },
+            en: {
+                title: 'Campaign Artwork',
+                description: 'Visual direction for a digital campaign with an editorial approach and strong brand presence.',
+                category: 'Graphic Design',
+                tags: ['Art Direction', 'Campaign', 'Brand'],
+                client: 'Mira Co.',
+                duration: '4 days',
+                tools: ['Photoshop', 'Illustrator', 'Figma'],
+                challenge: 'Unify identity, narrative, and multiple formats into a cohesive campaign.',
+                solution: 'I created a modular visual system with application across web, social, and digital materials.',
+                button: 'View Details'
+            }
+        },
+        details: {
+            client: 'Mira Co.',
+            duration: { pt: '4 dias', en: '4 days' },
+            tools: ['Photoshop', 'Illustrator', 'Figma'],
+            challenge: { pt: 'Unificar identidade, narrativa e diferentes formatos em uma campanha coesa.', en: 'Unify identity, narrative, and multiple formats into a cohesive campaign.' },
+            solution: { pt: 'Desenvolvi um sistema visual modular com aplicação em web, redes e materiais digitais.', en: 'I created a modular visual system with application across web, social, and digital materials.' },
+            images: ['images/02.jpg', 'images/graphic_design_example_new2.jpg']
+        }
+    },
+    {
+        id: 11,
+        category: 'uiux',
+        image: 'images/03.jpg',
+        tags: ['Interface', 'Research', 'UX'],
+        translations: {
+            pt: {
+                title: 'Interface de Acesso',
+                description: 'Design de interface para experiência de acesso e intro de produto com maior clareza e confiança.',
+                category: 'UI/UX Design',
+                tags: ['Interface', 'Research', 'UX'],
+                client: 'Orbit Lab',
+                duration: '8 dias',
+                tools: ['Figma', 'Illustrator', 'Adobe XD'],
+                challenge: 'Simplificar o primeiro contato do usuário com uma solução complexa.',
+                solution: 'Criei uma linguagem visual coerente com navegação intuitiva e chamadas estratégicas.',
+                button: 'Ver Detalhes'
+            },
+            en: {
+                title: 'Access Interface',
+                description: 'Interface design for a product access experience with greater clarity and user confidence.',
+                category: 'UI/UX Design',
+                tags: ['Interface', 'Research', 'UX'],
+                client: 'Orbit Lab',
+                duration: '8 days',
+                tools: ['Figma', 'Illustrator', 'Adobe XD'],
+                challenge: 'Simplify the user’s first contact with a complex solution.',
+                solution: 'I created a coherent visual language with intuitive navigation and strategic calls to action.',
+                button: 'View Details'
+            }
+        },
+        details: {
+            client: 'Orbit Lab',
+            duration: { pt: '8 dias', en: '8 days' },
+            tools: ['Figma', 'Illustrator', 'Adobe XD'],
+            challenge: { pt: 'Simplificar o primeiro contato do usuário com uma solução complexa.', en: 'Simplify the user’s first contact with a complex solution.' },
+            solution: { pt: 'Criei uma linguagem visual coerente com navegação intuitiva e chamadas estratégicas.', en: 'I created a coherent visual language with intuitive navigation and strategic calls to action.' },
+            images: ['images/03.jpg', 'images/01.png']
+        }
+    },
+    {
+        id: 12,
+        category: 'graphic',
+        image: 'images/graphic_design_example_new1.jpg',
+        tags: ['Poster', 'Creative', 'Art'],
+        translations: {
+            pt: {
+                title: 'Arte de Pôster',
+                description: 'Composição gráfica experimental para campanha visual com atitude contemporânea e impacto editorial.',
+                category: 'Design Gráfico',
+                tags: ['Poster', 'Creative', 'Art'],
+                client: 'Bairro 23',
+                duration: '2 dias',
+                tools: ['Photoshop', 'Illustrator', 'Figma'],
+                challenge: 'Criar uma peça marcante e memorável para divulgação visual.',
+                solution: 'Apliquei sobreposição, contrastes e uma composição experimental para gerar atenção imediata.',
+                button: 'Ver Detalhes'
+            },
+            en: {
+                title: 'Poster Artwork',
+                description: 'Experimental graphic composition for a visual campaign with a contemporary attitude and editorial impact.',
+                category: 'Graphic Design',
+                tags: ['Poster', 'Creative', 'Art'],
+                client: 'Bairro 23',
+                duration: '2 days',
+                tools: ['Photoshop', 'Illustrator', 'Figma'],
+                challenge: 'Create a memorable piece for visual promotion.',
+                solution: 'I used overlays, contrast, and an experimental composition to create immediate attention.',
+                button: 'View Details'
+            }
+        },
+        details: {
+            client: 'Bairro 23',
+            duration: { pt: '2 dias', en: '2 days' },
+            tools: ['Photoshop', 'Illustrator', 'Figma'],
+            challenge: { pt: 'Criar uma peça marcante e memorável para divulgação visual.', en: 'Create a memorable piece for visual promotion.' },
+            solution: { pt: 'Apliquei sobreposição, contrastes e uma composição experimental para gerar atenção imediata.', en: 'I used overlays, contrast, and an experimental composition to create immediate attention.' },
+            images: ['images/graphic_design_example_new1.jpg', 'images/02.png']
         }
     }
 ];
@@ -197,6 +612,12 @@ class ThemeManager {
 
     applyTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
+
+        const brandLogo = document.querySelector('.brand-logo');
+        if (brandLogo) {
+            brandLogo.src = theme === 'dark' ? 'images/White_Vert_.png' : 'images/Black_Vert.png';
+            brandLogo.alt = 'Gessica Araujo';
+        }
     }
 
     updateThemeIcon() {
@@ -244,13 +665,16 @@ class LanguageManager {
                 }
             }
         });
-        
+
+        if (window.portfolio && typeof window.portfolio.renderPortfolio === 'function') {
+            window.portfolio.renderPortfolio();
+        }
 
         // Traduzir placeholders
         const nameInput = document.getElementById('name');
         const emailInput = document.getElementById('email');
         const messageTextarea = document.getElementById('message');
-        
+
         if (nameInput) {
             nameInput.placeholder = this.currentLang === 'pt' ? 'Ex: João Silva' : 'Ex: John Smith';
         }
@@ -390,14 +814,34 @@ class Portfolio {
 
         this.renderPortfolio();
         this.initFilters();
+        this.initCarouselControls();
+    }
+
+    getLocalizedItem(item, lang = document.documentElement.getAttribute('data-lang') || 'pt') {
+        const translation = item.translations?.[lang] || item.translations?.pt || item;
+        return {
+            ...item,
+            title: translation.title || item.title,
+            description: translation.description || item.description,
+            category: translation.category || item.category,
+            tags: translation.tags || item.tags,
+            client: translation.client || item.details?.client,
+            duration: translation.duration || (item.details?.duration?.[lang] || item.details?.duration?.pt || item.details?.duration),
+            tools: translation.tools || item.details?.tools,
+            challenge: translation.challenge || item.details?.challenge?.[lang] || item.details?.challenge,
+            solution: translation.solution || item.details?.solution?.[lang] || item.details?.solution,
+            button: translation.button || 'Ver Detalhes'
+        };
     }
 
     renderPortfolio() {
         portfolioGrid.innerHTML = '';
+        const lang = document.documentElement.getAttribute('data-lang') || 'pt';
         const filteredData = this.currentFilter === 'all' ? portfolioData : portfolioData.filter(item => item.category === this.currentFilter);
 
         filteredData.forEach((item, index) => {
-            const portfolioItem = this.createPortfolioItem(item);
+            const localizedItem = this.getLocalizedItem(item, lang);
+            const portfolioItem = this.createPortfolioItem(localizedItem);
             portfolioGrid.appendChild(portfolioItem);
             setTimeout(() => portfolioItem.classList.add('visible'), index * 100);
             this.observer.observe(portfolioItem);
@@ -407,10 +851,11 @@ class Portfolio {
     createPortfolioItem(item) {
         const portfolioItem = document.createElement('div');
         portfolioItem.className = 'portfolio-item fade-in glass';
+        const buttonText = item.button || 'Ver Detalhes';
         portfolioItem.innerHTML = `
             <div class="portfolio-image" style="background-image: url('${item.image}')">
                 <div class="portfolio-overlay">
-                    <button class="btn btn-primary" onclick="portfolio.openModal(${item.id})">Ver Detalhes</button>
+                    <button class="btn btn-primary" type="button" onclick="portfolio.openModal(${item.id})">${buttonText}</button>
                 </div>
             </div>
             <div class="portfolio-content">
@@ -434,6 +879,21 @@ class Portfolio {
         });
     }
 
+    initCarouselControls() {
+        const prevButton = document.querySelector('.portfolio-nav-prev');
+        const nextButton = document.querySelector('.portfolio-nav-next');
+
+        if (!prevButton || !nextButton) return;
+
+        prevButton.addEventListener('click', () => {
+            portfolioGrid.scrollBy({ left: -320, behavior: 'smooth' });
+        });
+
+        nextButton.addEventListener('click', () => {
+            portfolioGrid.scrollBy({ left: 320, behavior: 'smooth' });
+        });
+    }
+
     setFilter(filter) {
         this.currentFilter = filter;
         this.renderPortfolio();
@@ -443,30 +903,36 @@ class Portfolio {
         const item = portfolioData.find(p => p.id === itemId);
         if (!item) return;
 
-        modalBody.innerHTML = this.createModalContent(item);
+        const lang = document.documentElement.getAttribute('data-lang') || 'pt';
+        const localizedItem = this.getLocalizedItem(item, lang);
+        modalBody.innerHTML = this.createModalContent(localizedItem);
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
 
     createModalContent(item) {
+        const lang = document.documentElement.getAttribute('data-lang') || 'pt';
+        const detailTitle = lang === 'pt' ? 'Cliente' : 'Client';
+        const durationTitle = lang === 'pt' ? 'Duração' : 'Duration';
+        const toolsTitle = lang === 'pt' ? 'Ferramentas' : 'Tools';
+        const challengeTitle = lang === 'pt' ? 'Desafio' : 'Challenge';
+        const solutionTitle = lang === 'pt' ? 'Solução' : 'Solution';
+
         let mediaContent = '';
-        
-        // INSTRUÇÕES PARA EDIÇÃO: Se o projeto tem vídeo, exibe o player responsivo
-        if (item.details.video) {
+        if (item.details?.video) {
             mediaContent = `
                 <div class="modal-video" style="margin-bottom: 1.5rem; text-align: center;">
                     <video controls style="max-width: 100%; max-height: 300px; border-radius: 0.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
                         <source src="${item.details.video}" type="video/mp4">
-                        Seu navegador não suporta o elemento de vídeo.
+                        ${lang === 'pt' ? 'Seu navegador não suporta o elemento de vídeo.' : 'Your browser does not support the video element.'}
                     </video>
                 </div>
             `;
         }
-        
-        // Adiciona as imagens
+
         mediaContent += `
             <div class="modal-images">
-                ${item.details.images.map(img => `
+                ${(item.details?.images || []).map(img => `
                     <img src="${img}" alt="${item.title}" 
                          style="max-width:100%; height:auto; margin-bottom:0.75rem; border-radius:0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
                 `).join('')}
@@ -476,17 +942,17 @@ class Portfolio {
         return `
             <div class="modal-header">
                 <h2 id="modal-title">${item.title}</h2>
-                <div class="portfolio-tags">${item.tags.map(tag => `<span class="portfolio-tag">${tag}</span>`).join('')}</div>
+                <div class="portfolio-tags">${(item.tags || []).map(tag => `<span class="portfolio-tag">${tag}</span>`).join('')}</div>
             </div>
             ${mediaContent}
             <div class="modal-details">
                 <div class="detail-grid">
-                    <div class="detail-item"><h4>Cliente</h4><p>${item.details.client}</p></div>
-                    <div class="detail-item"><h4>Duração</h4><p>${item.details.duration}</p></div>
-                    <div class="detail-item"><h4>Ferramentas</h4><p>${item.details.tools.join(', ')}</p></div>
+                    <div class="detail-item"><h4>${detailTitle}</h4><p>${item.client || item.details?.client}</p></div>
+                    <div class="detail-item"><h4>${durationTitle}</h4><p>${item.duration || (item.details?.duration?.[lang] || item.details?.duration)}</p></div>
+                    <div class="detail-item"><h4>${toolsTitle}</h4><p>${(item.tools || item.details?.tools || []).join(', ')}</p></div>
                 </div>
-                <div class="detail-section"><h4>Desafio</h4><p>${item.details.challenge}</p></div>
-                <div class="detail-section"><h4>Solução</h4><p>${item.details.solution}</p></div>
+                <div class="detail-section"><h4>${challengeTitle}</h4><p>${item.challenge || item.details?.challenge?.[lang] || item.details?.challenge}</p></div>
+                <div class="detail-section"><h4>${solutionTitle}</h4><p>${item.solution || item.details?.solution?.[lang] || item.details?.solution}</p></div>
             </div>
         `;
     }
@@ -494,8 +960,6 @@ class Portfolio {
     closeModal() {
         modal.classList.remove('active');
         document.body.style.overflow = '';
-        
-        // Pause any playing videos
         const videos = modal.querySelectorAll('video');
         videos.forEach(video => {
             video.pause();
@@ -506,37 +970,72 @@ class Portfolio {
 
 // Contact Form
 class ContactForm {
-    constructor() { 
-        this.init(); 
+    constructor() {
+        this.init();
     }
 
-    init() { 
-        contactForm.addEventListener('submit', e => this.handleSubmit(e)); 
+    init() {
+        const sendButtons = document.querySelectorAll('.contact-option-btn');
+        sendButtons.forEach(button => {
+            button.addEventListener('click', () => this.handleSend(button.dataset.action));
+        });
     }
 
-    handleSubmit(e) {
-        e.preventDefault();
-        const formData = new FormData(contactForm);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const message = formData.get('message');
+    getFormData() {
+        const name = document.getElementById('name')?.value?.trim() || '';
+        const email = document.getElementById('email')?.value?.trim() || '';
+        const message = document.getElementById('message')?.value?.trim() || '';
 
-        const whatsappUrl = `https://wa.me/5551997806768?text=${encodeURIComponent(`Olá! Meu nome é ${name} (${email}).\n\n${message}`)}`;
-        window.open(whatsappUrl, '_blank');
+        return { name, email, message };
+    }
 
-        this.showSuccessMessage();
+    validateEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    showValidationMessage(message) {
+        const existing = contactForm.querySelector('.form-feedback');
+        if (existing) existing.remove();
+
+        const feedback = document.createElement('div');
+        feedback.className = 'form-feedback';
+        feedback.textContent = message;
+        contactForm.appendChild(feedback);
+
+        setTimeout(() => feedback.remove(), 3000);
+    }
+
+    handleSend(action) {
+        const { name, email, message } = this.getFormData();
+
+        if (!name || !email || !message) {
+            this.showValidationMessage(document.documentElement.getAttribute('data-lang') === 'en'
+                ? 'Please fill in name, email and message.'
+                : 'Preencha nome, e-mail e mensagem.');
+            return;
+        }
+
+        if (!this.validateEmail(email)) {
+            this.showValidationMessage(document.documentElement.getAttribute('data-lang') === 'en'
+                ? 'Please enter a valid email address.'
+                : 'Digite um e-mail válido.');
+            return;
+        }
+
+        if (action === 'whatsapp') {
+            const whatsappText = `Olá! Meu nome é ${name}.\n\nMeu e-mail é: ${email}\n\nMensagem:\n${message}`;
+            const whatsappUrl = `https://wa.me/5551997806768?text=${encodeURIComponent(whatsappText)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        if (action === 'email') {
+            const subject = encodeURIComponent(document.documentElement.getAttribute('data-lang') === 'en' ? `New contact - ${name}` : `Novo contato - ${name}`);
+            const emailBody = encodeURIComponent(`Nome: ${name}\nE-mail: ${email}\n\nMensagem:\n${message}`);
+            const mailtoUrl = `mailto:simuledesign@gmail.com?subject=${subject}&body=${emailBody}`;
+            window.location.href = mailtoUrl;
+        }
+
         contactForm.reset();
-    }
-
-    showSuccessMessage() {
-        const button = contactForm.querySelector('button[type="submit"]');
-        const originalText = button.textContent;
-        button.textContent = 'Mensagem Enviada! ✓';
-        button.style.background = '#10b981';
-        setTimeout(() => { 
-            button.textContent = originalText; 
-            button.style.background = ''; 
-        }, 3000);
     }
 }
 
