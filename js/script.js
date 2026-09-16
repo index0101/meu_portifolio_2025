@@ -77,8 +77,7 @@ const portfolioData = [
             tools: ['Figma', 'Illustrator', 'Photoshop', 'CorelDraw'],
             challenge: { pt: 'Melhorar a taxa de conversão do app mobile existente.', en: 'Improve conversion rates in the existing mobile app.' },
             solution: { pt: 'Redesenhamos o fluxo de compra com foco na redução de etapas e melhoria da experiência do usuário.', en: 'We redesigned the purchase flow to reduce friction and enhance the user experience.' },
-            images: ['images/uiux_example_new2.png', 'images/uiux_example_new1.png'],
-            video: 'videos/coffeeapp-Opera2025-09-1218-29-04.mp4'
+            images: ['images/uiux_example_new2.png', 'images/uiux_example_new1.png']
         }
     },
     {
