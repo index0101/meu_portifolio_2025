@@ -1,0 +1,201 @@
+﻿Diagnose log at 2026-09-15T23:01:01Z
+
+AppPath: C:\Program Files\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\mingw64\bin\
+Version: 2.9.1+6760f0ef069c994aa2bb1d703fb374986ee82a3e
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 26200)
+Reading environment variables... OK
+ Variables:
+SystemDrive=C:
+ProgramFiles(x86)=C:\Program Files (x86)
+MSYSTEM=MINGW64
+ProgramW6432=C:\Program Files
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
+POWERSHELL_DISTRIBUTION_CHANNEL=MSI:Windows 10 Home
+TMP=C:\Users\gessi\AppData\Local\Temp
+PROCESSOR_ARCHITECTURE=AMD64
+VSCODE_GIT_ASKPASS_MAIN=c:\Users\gessi\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\70789581cae28aa7\askpass-main.js
+Path=C:/Program Files/Git/mingw64/libexec/git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\gessi\bin;C:\Program Files\PowerShell\7;c:\Users\gessi\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\gessi\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\nodejs\;C:\wget;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\gessi\.local\bin;C:\Users\gessi\AppData\Local\Microsoft\WindowsApps;C:\Users\gessi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\gessi\AppData\Roaming\npm;C:\Users\gessi\AppData\Local\Python\bin;C:\Users\gessi\AppData\Local\Python\pythoncore-3.14-64\Scripts;
+VSCODE_GIT_IPC_HANDLE=\\.\pipe\vscode-git-041edd2615-sock
+PROCESSOR_REVISION=9a03
+TEMP=C:\Users\gessi\AppData\Local\Temp
+USERPROFILE=C:\Users\gessi
+LOGONSERVER=\\MSI
+TERM=xterm-256color
+USERNAME=gessi
+SystemRoot=C:\Windows
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_49668_SRPAKIHFFFODKJBH
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+PLINK_PROTOCOL=ssh
+GIT_PAGER=cat
+OneDrive=C:\Users\gessi\OneDrive
+USERDOMAIN_ROAMINGPROFILE=MSI
+CommonProgramFiles=C:\Program Files\Common Files
+ZES_ENABLE_SYSMAN=1
+VSCODE_PYTHON_AUTOACTIVATE_GUARD=1
+ProgramData=C:\ProgramData
+LANG=en_US.UTF-8
+AI_AGENT=github_copilot_vscode_agent
+HOMEPATH=\Users\gessi
+IGCCSVC_DB=AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANa1rfO42DU6LvD8TYW4yCQQAAAACAAAAAAAQZgAAAAEAACAAAAC1d1MeSfgmkCTay4uEuBxoQXXevqlN415SKY1Mf7hNAgAAAAAOgAAAAAIAACAAAACJ6KjQeqpFOG4LLSIHw/7QaXedF9sYzHDuEHBTHKfXlGAAAADwssR8tkyqeg8UNvpSxKM2GC9kUz0kCiTj5/9LROhvNzWoH5iyjWofsLqj/nhIn3ArwMZwG7v3SJGDkVCYGyg5HHnNxE8+WidJ8h055eDJzlkLZAVelhnhU5UDAkWyw2xAAAAAw/6RyLQx1u9tgpynENZe6aeM7I60v91BvpfdNaXdk1420ujMpI8hfJPcXbtNioX2Qe+04AF6Exkx5fA/InZ9ug==
+COMPUTERNAME=MSI
+EFC_15984_1592913036=1
+VSCODE_INJECTION=1
+ALLUSERSPROFILE=C:\ProgramData
+CommonProgramW6432=C:\Program Files\Common Files
+UV_NATIVE_TLS=true
+EFC_15984_4126798990=1
+DEBIAN_FRONTEND=noninteractive
+COPILOT_DEBUG_NONCE=1b6606f7f9305e70ee0805296f7b003b
+__PSLockDownPolicy=0
+COPILOT_AGENT=1
+SESSIONNAME=Console
+DriverData=C:\Windows\System32\Drivers\DriverData
+HOMEDRIVE=C:
+GIT_ASKPASS=c:\Users\gessi\AppData\Roaming\Code\User\globalStorage\vscode.git\askpass\70789581cae28aa7\askpass.sh
+windir=C:\Windows
+GIT_TRACE2_PARENT_SID=afc46c4a-e86c-44e6-833b-a10a16fb9d70
+VSCODE_GIT_ASKPASS_NODE=C:\Users\gessi\AppData\Local\Programs\Microsoft VS Code\Code.exe
+NUMBER_OF_PROCESSORS=16
+OS=Windows_NT
+GIT_MERGE_AUTOEDIT=no
+ProgramFiles=C:\Program Files
+ComSpec=C:\Windows\system32\cmd.exe
+wget=C:\Program Files\wget
+GIT_EDITOR=:
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+HOME=C:\Users\gessi
+PSModulePath=C:\Users\gessi\OneDrive\Documentos\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\powershell\7\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+TMPDIR=C:\Users\gessi\AppData\Local\Temp
+APPDATA=C:\Users\gessi\AppData\Roaming
+USERDOMAIN=MSI
+PROCESSOR_LEVEL=6
+LOCALAPPDATA=C:\Users\gessi\AppData\Local
+TERM_PROGRAM_VERSION=1.136.2
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+OneDriveConsumer=C:\Users\gessi\OneDrive
+COLORTERM=truecolor
+PUBLIC=C:\Users\Public
+TERM_PROGRAM=vscode
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\gessi\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\gessi\AppData\Local\Temp\a3504d94895da0bee45a6c20'... OK
+Reading from temporary file 'C:\Users\gessi\AppData\Local\Temp\a3504d94895da0bee45a6c20'... OK
+Deleting temporary file 'C:\Users\gessi\AppData\Local\Temp\a3504d94895da0bee45a6c20'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\gessi
+UserDataDirectoryPath: C:\Users\gessi\.gcm
+GetCurrentDirectory(): C:\Users\gessi\OneDrive\Documentos\meu site 2026\meu_portifolio_2025
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:64982/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.55.0.windows.5'
+Locating current repository...Git repository at 'C:/Users/gessi/OneDrive/Documentos/meu site 2026/meu_portifolio_2025/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=openssl
+file:C:/Program Files/Git/etc/gitconfig	http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=true
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/gessi/.gitconfig	core.editor="C:\Users\gessi\AppData\Local\Programs\Microsoft VS Code\bin\code" --wait
+file:C:/Users/gessi/.gitconfig	user.name=Gessica Araujo
+file:C:/Users/gessi/.gitconfig	user.email=gessicarehder@gmail.com
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/index0101/meu_portifolio_2025.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+file:.git/config	branch.main.remote=origin
+file:.git/config	branch.main.merge=refs/heads/main
+file:.git/config	branch.main.vscode-merge-base=origin/main
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\gessi\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\gessi\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+

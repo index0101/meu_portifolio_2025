@@ -1490,9 +1490,35 @@ section {
     .skills-grid {
         grid-template-columns: 1fr;
     }
+
+    .hero-main-image {
+        width: min(100%, 420px);
+        max-height: 280px;
+        height: auto;
+    }
+
+    .about-main-image {
+        width: min(100%, 360px);
+        max-height: 380px;
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
+    .brand-logo {
+        width: clamp(112px, 30vw, 170px);
+    }
+
+    .hero-main-image {
+        width: min(100%, 360px);
+        max-height: 250px;
+    }
+
+    .about-main-image {
+        width: min(100%, 320px);
+        max-height: 340px;
+    }
+
     .nav-menu {
         position: fixed;
         top: 100%;
