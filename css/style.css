@@ -901,7 +901,7 @@ section {
 
 .logo-track {
     display: flex;
-    animation: marquee 30s linear infinite;
+    animation: marquee 27s linear infinite;
     gap: 3rem;
 }
 

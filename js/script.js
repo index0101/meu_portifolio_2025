@@ -81,13 +81,53 @@ const portfolioData = [
         }
     },
     {
+        id: 13,
+        category: 'graphic',
+        image: 'images/graphic_design_example_new1.jpg',
+        tags: ['GRAPHIC DESIGN', 'PRINT DESIGN', 'PRODUCTION'],
+        translations: {
+            pt: {
+                title: 'Gráfica e Produtos',
+                description: 'Projeto de design gráfico voltado para produção de materiais visuais.',
+                category: 'Design Gráfico',
+                tags: ['GRAPHIC DESIGN', 'PRINT DESIGN', 'PRODUCTION'],
+                client: 'Gráfica Rápida',
+                duration: '8h',
+                tools: ['Illustrator', 'Photoshop', 'CorelDRAW'],
+                challenge: 'Criar materiais gráficos visualmente consistentes e preparados para diferentes aplicações, equilibrando qualidade visual, comunicação e requisitos de produção para impressão.',
+                solution: 'Desenvolvimento de peças gráficas pensadas para produção, combinando composição visual, identidade e preparação adequada para diferentes formatos e materiais impressos.',
+                button: 'Ver Detalhes'
+            },
+            en: {
+                title: 'Graphics & Products',
+                description: 'Graphic design project focused on producing visual materials.',
+                category: 'Graphic Design',
+                tags: ['GRAPHIC DESIGN', 'PRINT DESIGN', 'PRODUCTION'],
+                client: 'Gráfica Rápida',
+                duration: '8h',
+                tools: ['Illustrator', 'Photoshop', 'CorelDRAW'],
+                challenge: 'Create visually consistent graphic materials prepared for different applications, balancing visual quality, communication, and print production requirements.',
+                solution: 'Development of production-ready graphic pieces combining visual composition, identity, and suitable preparation for different formats and printed materials.',
+                button: 'View Details'
+            }
+        },
+        details: {
+            client: 'Gráfica Rápida',
+            duration: { pt: '8h', en: '8h' },
+            tools: ['Illustrator', 'Photoshop', 'CorelDRAW'],
+            challenge: { pt: 'Criar materiais gráficos visualmente consistentes e preparados para diferentes aplicações, equilibrando qualidade visual, comunicação e requisitos de produção para impressão.', en: 'Create visually consistent graphic materials prepared for different applications, balancing visual quality, communication, and print production requirements.' },
+            solution: { pt: 'Desenvolvimento de peças gráficas pensadas para produção, combinando composição visual, identidade e preparação adequada para diferentes formatos e materiais impressos.', en: 'Development of production-ready graphic pieces combining visual composition, identity, and suitable preparation for different formats and printed materials.' },
+            images: ['images/graphic_design_example_new1.jpg', 'images/graphic_design_example_new2.jpg']
+        }
+    },
+    {
         id: 3,
         category: 'graphic',
         image: 'images/graphic_design_example_new1.jpg',
         tags: ['Branding', 'Logo Design', 'Identidade Visual'],
         translations: {
             pt: {
-                title: 'Identidade Visual Ozix',
+                title: 'Identidade Visual',
                 description: 'Desenvolvimento completo de identidade visual para marca de micro SaaS, incluindo logo, paleta e aplicações.',
                 category: 'Design Gráfico',
                 tags: ['Branding', 'Logo Design', 'Identidade Visual'],
@@ -99,7 +139,7 @@ const portfolioData = [
                 button: 'Ver Detalhes'
             },
             en: {
-                title: 'Ozix Visual Identity',
+                title: 'Visual Identity',
                 description: 'Complete visual identity development for a micro SaaS brand, including logo, palette and applications.',
                 category: 'Graphic Design',
                 tags: ['Branding', 'Logo Design', 'Visual Identity'],
@@ -127,7 +167,7 @@ const portfolioData = [
         tags: ['Graphic Design', 'Car Design', 'Social Media'],
         translations: {
             pt: {
-                title: 'Car Graphics Showcase',
+                title: 'Social Media',
                 description: 'Criação de artes digitais destacando carros esportivos de forma moderna e impactante.',
                 category: 'Design Gráfico',
                 tags: ['Graphic Design', 'Car Design', 'Social Media'],
@@ -139,7 +179,7 @@ const portfolioData = [
                 button: 'Ver Detalhes'
             },
             en: {
-                title: 'Car Graphics Showcase',
+                title: 'Social Media',
                 description: 'Digital art created to highlight sports cars in a modern and impactful way.',
                 category: 'Graphic Design',
                 tags: ['Graphic Design', 'Car Design', 'Social Media'],
@@ -163,7 +203,7 @@ const portfolioData = [
     {
         id: 5,
         category: 'uiux',
-        image: 'images/uiux_example_new1.png',
+        image: 'images/nexora1.jpg',
         tags: ['UX Strategy', 'Dashboard', 'Prototype'],
         translations: {
             pt: {
@@ -171,9 +211,9 @@ const portfolioData = [
                 description: 'Experiência de usuário para painel administrativo com métricas, relatórios e visão de performance.',
                 category: 'UI/UX Design',
                 tags: ['UX Strategy', 'Dashboard', 'Prototype'],
-                client: 'Nova Metrics',
-                duration: '2 semanas',
-                tools: ['Figma', 'Notion', 'Illustrator'],
+                client: 'Nexora Saas',
+                duration: '2 dias',
+                tools: ['Figma', 'Corel e Vscode.'],
                 challenge: 'Organizar dados complexos em uma interface clara e estratégica.',
                 solution: 'Estruturei painéis e fluxos com foco em leitura rápida e decisões inteligentes.',
                 button: 'Ver Detalhes'
@@ -183,27 +223,27 @@ const portfolioData = [
                 description: 'User experience for an admin dashboard featuring metrics, reports, and performance insights.',
                 category: 'UI/UX Design',
                 tags: ['UX Strategy', 'Dashboard', 'Prototype'],
-                client: 'Nova Metrics',
-                duration: '2 weeks',
-                tools: ['Figma', 'Notion', 'Illustrator'],
+                client: 'Nexora Saas',
+                duration: '2 days',
+                tools: ['Figma', 'Corel and Vscode.'],
                 challenge: 'Organize complex data in a clear and strategic interface.',
                 solution: 'I structured dashboards and flows focused on quick reading and smart decision-making.',
                 button: 'View Details'
             }
         },
         details: {
-            client: 'Nova Metrics',
-            duration: { pt: '2 semanas', en: '2 weeks' },
-            tools: ['Figma', 'Notion', 'Illustrator'],
+            client: 'Nexora Saas',
+            duration: { pt: '2 dias', en: '2 days' },
+            tools: ['Figma', 'Corel e Vscode.'],
             challenge: { pt: 'Organizar dados complexos em uma interface clara e estratégica.', en: 'Organize complex data in a clear and strategic interface.' },
             solution: { pt: 'Estruturei painéis e fluxos com foco em leitura rápida e decisões inteligentes.', en: 'I structured dashboards and flows focused on quick reading and smart decision-making.' },
-            images: ['images/uiux_example_new1.png', 'images/graphic_design_example_new2.jpg']
+            images: ['images/nexora1.jpg', 'images/nexora2.jpg']
         }
     },
     {
         id: 6,
         category: 'graphic',
-        image: 'images/graphic_design_example_new2.jpg',
+        image: 'images/studio1.jpg',
         tags: ['Editorial', 'Branding', 'Photography'],
         translations: {
             pt: {
@@ -237,13 +277,13 @@ const portfolioData = [
             tools: ['Photoshop', 'Illustrator', 'InDesign'],
             challenge: { pt: 'Criar um conjunto visual impactante com consistência editorial.', en: 'Create a visually strong set with consistent editorial language.' },
             solution: { pt: 'Desenvolvi sequência visual, hierarquia e materiais que ampliaram o storytelling da marca.', en: 'I developed a visual sequence, hierarchy, and assets that amplified the brand storytelling.' },
-            images: ['images/graphic_design_example_new2.jpg', 'images/02.jpg', 'images/03.jpg']
+            images: ['images/studio1.jpg', 'images/studio2.jpg', 'images/studio3.jpg']
         }
     },
     {
         id: 7,
         category: 'uiux',
-        image: 'images/02.png',
+        image: 'images/luma1.jpg',
         tags: ['UX Writing', 'Mobile', 'Conversion'],
         translations: {
             pt: {
@@ -252,8 +292,8 @@ const portfolioData = [
                 category: 'UI/UX Design',
                 tags: ['UX Writing', 'Mobile', 'Conversion'],
                 client: 'Luma Studio',
-                duration: '10 dias',
-                tools: ['Figma', 'Miro', 'Photoshop'],
+                duration: '1 semana',
+                tools: ['Figma', 'Vscode, Coreldraw.'],
                 challenge: 'Simplificar a jornada de agendamento e aumentar a confiança do usuário.',
                 solution: 'Redesenhei a experiência com menos etapas, mais clareza visual e microinterações suaves.',
                 button: 'Ver Detalhes'
@@ -264,8 +304,8 @@ const portfolioData = [
                 category: 'UI/UX Design',
                 tags: ['UX Writing', 'Mobile', 'Conversion'],
                 client: 'Luma Studio',
-                duration: '10 days',
-                tools: ['Figma', 'Miro', 'Photoshop'],
+                duration: '1 week',
+                tools: ['Figma, Vscode, Coreldraw.'],
                 challenge: 'Simplify the scheduling journey and increase user confidence.',
                 solution: 'I redesigned the experience with fewer steps, clearer visuals, and smoother microinteractions.',
                 button: 'View Details'
@@ -273,11 +313,11 @@ const portfolioData = [
         },
         details: {
             client: 'Luma Studio',
-            duration: { pt: '10 dias', en: '10 days' },
-            tools: ['Figma', 'Miro', 'Photoshop'],
+            duration: { pt: '1 semana', en: '1 week' },
+            tools: ['Figma, Vscode, Coreldraw.'],
             challenge: { pt: 'Simplificar a jornada de agendamento e aumentar a confiança do usuário.', en: 'Simplify the scheduling journey and increase user confidence.' },
             solution: { pt: 'Redesenhei a experiência com menos etapas, mais clareza visual e microinterações suaves.', en: 'I redesigned the experience with fewer steps, clearer visuals, and smoother microinteractions.' },
-            images: ['images/02.png', 'images/uiux_example_new2.png']
+            images: ['images/luma1.jpg', 'images/luma2.jpg']
         }
     },
     {
@@ -323,41 +363,41 @@ const portfolioData = [
     {
         id: 9,
         category: 'uiux',
-        image: 'images/01.png',
+        image: 'images/monster1.jpg',
         tags: ['Landing Page', 'UX', 'Research'],
         translations: {
             pt: {
-                title: 'Landing Page de Produto',
-                description: 'Página promocional para lançamento de produto com narrativa forte e conversão visual.',
+                title: 'Gaming Platform UI/UX',
+                description: 'Interface web imersiva para uma plataforma gamer com navegação intuitiva e visual impactante.',
                 category: 'UI/UX Design',
-                tags: ['Landing Page', 'UX', 'Research'],
-                client: 'North Studio',
-                duration: '6 dias',
-                tools: ['Figma', 'Illustrator', 'Photoshop'],
-                challenge: 'Criar uma experiência clara e emocionante para conversão de leads.',
-                solution: 'Estruturei blocos narrativos, visuais e hierarquias que guiaram a jornada do usuário.',
+                tags: ['WEB DESIGN', 'UI/UX', 'USER RESEARCH'],
+                client: 'Monster On',
+                duration: '8 Dias',
+                tools: ['Figma', 'Illustrator', 'Photoshop', 'CorelDRAW'],
+                challenge: 'Criar uma experiência web para uma plataforma gamer capaz de transmitir a identidade visual da Monster On, organizar diferentes conteúdos de jogos e tornar a navegação intuitiva, envolvente e visualmente impactante.',
+                solution: 'Desenvolvi uma interface web imersiva com linguagem visual gamer, hierarquia de informações e navegação organizada. A proposta combina UI/UX, composição visual e prototipação para transformar a plataforma em uma experiência digital consistente, atrativa e funcional.',
                 button: 'Ver Detalhes'
             },
             en: {
-                title: 'Product Landing Page',
-                description: 'Promotional page for a product launch with a strong narrative and visual conversion.',
+                title: 'Gaming Platform UI/UX',
+                description: 'Immersive web interface for a gaming platform with intuitive navigation and impactful visuals.',
                 category: 'UI/UX Design',
-                tags: ['Landing Page', 'UX', 'Research'],
-                client: 'North Studio',
-                duration: '6 days',
-                tools: ['Figma', 'Illustrator', 'Photoshop'],
-                challenge: 'Create a clear and exciting experience to improve lead conversion.',
-                solution: 'I structured narrative blocks, visuals, and hierarchy to guide the user journey.',
+                tags: ['WEB DESIGN', 'UI/UX', 'USER RESEARCH'],
+                client: 'Monster On',
+                duration: '8 Days',
+                tools: ['Figma', 'Illustrator', 'Photoshop', 'CorelDRAW'],
+                challenge: 'Create a web experience for a gaming platform that conveys Monster On\'s visual identity, organizes different game content, and makes navigation intuitive, engaging, and visually impactful.',
+                solution: 'I developed an immersive web interface with a gaming visual language, clear information hierarchy, and organized navigation. The proposal combines UI/UX, visual composition, and prototyping to make the platform a consistent, attractive, and functional digital experience.',
                 button: 'View Details'
             }
         },
         details: {
-            client: 'North Studio',
-            duration: { pt: '6 dias', en: '6 days' },
-            tools: ['Figma', 'Illustrator', 'Photoshop'],
-            challenge: { pt: 'Criar uma experiência clara e emocionante para conversão de leads.', en: 'Create a clear and exciting experience to improve lead conversion.' },
-            solution: { pt: 'Estruturei blocos narrativos, visuais e hierarquias que guiaram a jornada do usuário.', en: 'I structured narrative blocks, visuals, and hierarchy to guide the user journey.' },
-            images: ['images/01.png', 'images/missele-dashboard_01.jpg']
+            client: 'Monster On',
+            duration: { pt: '8 Dias', en: '8 Days' },
+            tools: ['Figma', 'Illustrator', 'Photoshop', 'CorelDRAW'],
+            challenge: { pt: 'Criar uma experiência web para uma plataforma gamer capaz de transmitir a identidade visual da Monster On, organizar diferentes conteúdos de jogos e tornar a navegação intuitiva, envolvente e visualmente impactante.', en: 'Create a web experience for a gaming platform that conveys Monster On\'s visual identity, organizes different game content, and makes navigation intuitive, engaging, and visually impactful.' },
+            solution: { pt: 'Desenvolvi uma interface web imersiva com linguagem visual gamer, hierarquia de informações e navegação organizada. A proposta combina UI/UX, composição visual e prototipação para transformar a plataforma em uma experiência digital consistente, atrativa e funcional.', en: 'I developed an immersive web interface with a gaming visual language, clear information hierarchy, and organized navigation. The proposal combines UI/UX, visual composition, and prototyping to make the platform a consistent, attractive, and functional digital experience.' },
+            images: ['images/monster1.jpg', 'images/monster2.jpg']
         }
     },
     {
@@ -447,7 +487,7 @@ const portfolioData = [
         tags: ['Poster', 'Creative', 'Art'],
         translations: {
             pt: {
-                title: 'Arte de Pôster',
+                title: 'Arte de Poster',
                 description: 'Composição gráfica experimental para campanha visual com atitude contemporânea e impacto editorial.',
                 category: 'Design Gráfico',
                 tags: ['Poster', 'Creative', 'Art'],
@@ -481,6 +521,8 @@ const portfolioData = [
         }
     }
 ];
+
+const portfolioOrder = [13, 1, 2, 7, 5, 11, 9, 8, 3, 4, 6, 10, 12];
 
 // Language Data
 const languageData = {
@@ -629,6 +671,7 @@ class ThemeManager {
 class LanguageManager {
     constructor() {
         this.currentLang = localStorage.getItem('language') || 'pt';
+        document.documentElement.setAttribute('data-lang', this.currentLang);
         this.init();
     }
 
@@ -646,13 +689,18 @@ class LanguageManager {
 
     setLanguage(lang) {
         this.currentLang = lang;
+        document.documentElement.setAttribute('data-lang', lang);
         this.applyLanguage(lang);
         this.updateLanguageButtons();
         localStorage.setItem('language', lang);
-        document.documentElement.setAttribute('data-lang', lang);
     }
 
     applyLanguage(lang) {
+        const heroImage = document.querySelector('.hero-main-image');
+        if (heroImage) {
+            heroImage.src = lang === 'en' ? 'images/imagehomenew.png' : 'images/imagehomenew2.png';
+        }
+
         const elements = document.querySelectorAll('[data-pt][data-en]');
         elements.forEach(element => {
             const text = element.getAttribute(`data-${lang}`);
@@ -665,8 +713,8 @@ class LanguageManager {
             }
         });
 
-        if (window.portfolio && typeof window.portfolio.renderPortfolio === 'function') {
-            window.portfolio.renderPortfolio();
+        if (window.portfolio && typeof window.portfolio.updateCardText === 'function') {
+            window.portfolio.updateCardText(lang);
         }
 
         // Traduzir placeholders
@@ -836,7 +884,8 @@ class Portfolio {
     renderPortfolio() {
         portfolioGrid.innerHTML = '';
         const lang = document.documentElement.getAttribute('data-lang') || 'pt';
-        const filteredData = this.currentFilter === 'all' ? portfolioData : portfolioData.filter(item => item.category === this.currentFilter);
+        const filteredData = (this.currentFilter === 'all' ? portfolioData : portfolioData.filter(item => item.category === this.currentFilter))
+            .sort((firstItem, secondItem) => portfolioOrder.indexOf(firstItem.id) - portfolioOrder.indexOf(secondItem.id));
 
         filteredData.forEach((item, index) => {
             const localizedItem = this.getLocalizedItem(item, lang);
@@ -844,6 +893,21 @@ class Portfolio {
             portfolioGrid.appendChild(portfolioItem);
             setTimeout(() => portfolioItem.classList.add('visible'), index * 100);
             this.observer.observe(portfolioItem);
+        });
+    }
+
+    updateCardText(lang) {
+        const filteredData = (this.currentFilter === 'all' ? portfolioData : portfolioData.filter(item => item.category === this.currentFilter))
+            .sort((firstItem, secondItem) => portfolioOrder.indexOf(firstItem.id) - portfolioOrder.indexOf(secondItem.id));
+        const portfolioItems = portfolioGrid.querySelectorAll('.portfolio-item');
+
+        filteredData.forEach((item, index) => {
+            const portfolioItem = portfolioItems[index];
+            if (!portfolioItem) return;
+
+            const localizedItem = this.getLocalizedItem(item, lang);
+            portfolioItem.querySelector('.portfolio-title').textContent = localizedItem.title;
+            portfolioItem.querySelector('.portfolio-description').textContent = localizedItem.description;
         });
     }
 
