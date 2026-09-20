@@ -83,7 +83,7 @@ const portfolioData = [
     {
         id: 13,
         category: 'graphic',
-        image: 'images/graphic_design_example_new1.jpg',
+        image: 'images/grafica1.jpg',
         tags: ['GRAPHIC DESIGN', 'PRINT DESIGN', 'PRODUCTION'],
         translations: {
             pt: {
@@ -117,7 +117,7 @@ const portfolioData = [
             tools: ['Illustrator', 'Photoshop', 'CorelDRAW'],
             challenge: { pt: 'Criar materiais gráficos visualmente consistentes e preparados para diferentes aplicações, equilibrando qualidade visual, comunicação e requisitos de produção para impressão.', en: 'Create visually consistent graphic materials prepared for different applications, balancing visual quality, communication, and print production requirements.' },
             solution: { pt: 'Desenvolvimento de peças gráficas pensadas para produção, combinando composição visual, identidade e preparação adequada para diferentes formatos e materiais impressos.', en: 'Development of production-ready graphic pieces combining visual composition, identity, and suitable preparation for different formats and printed materials.' },
-            images: ['images/graphic_design_example_new1.jpg', 'images/graphic_design_example_new2.jpg']
+            images: ['images/grafica1.jpg', 'images/grafica2.jpg']
         }
     },
     {
@@ -323,7 +323,7 @@ const portfolioData = [
     {
         id: 8,
         category: 'graphic',
-        image: 'images/03.png',
+        image: 'images/embalagem1.jpg',
         tags: ['Packaging', 'Brand System', 'Print'],
         translations: {
             pt: {
@@ -331,11 +331,11 @@ const portfolioData = [
                 description: 'Criação de um sistema de embalagem com linguagem premium e impacto visual funcional.',
                 category: 'Design Gráfico',
                 tags: ['Packaging', 'Brand System', 'Print'],
-                client: 'Aster Atelier',
-                duration: '5 dias',
-                tools: ['Illustrator', 'Photoshop', 'InDesign'],
-                challenge: 'Equilibrar identidade premium com funcionalidade e produção imprime.',
-                solution: 'Desenvolvi uma identidade visual consistente para diferentes aplicações e materiais.',
+                client: 'Burger Lab',
+                duration: '3 dias',
+                tools: ['Illustrator', 'Photoshop', 'InDesign', 'CorelDRAW'],
+                challenge: 'Desenvolver uma identidade visual de embalagem capaz de destacar os produtos da Burger Lab, mantendo uma comunicação atrativa, consistente e adequada à produção gráfica.',
+                solution: 'Criação de uma proposta visual de embalagem com composição estratégica, aplicação consistente da identidade e preparação gráfica voltada à produção e apresentação dos produtos.',
                 button: 'Ver Detalhes'
             },
             en: {
@@ -343,21 +343,21 @@ const portfolioData = [
                 description: 'Packaging system development with a premium language and functional visual impact.',
                 category: 'Graphic Design',
                 tags: ['Packaging', 'Brand System', 'Print'],
-                client: 'Aster Atelier',
-                duration: '5 days',
-                tools: ['Illustrator', 'Photoshop', 'InDesign'],
-                challenge: 'Balance premium identity with functionality and print production.',
-                solution: 'I developed a consistent visual identity for multiple applications and materials.',
+                client: 'Burger Lab',
+                duration: '3 days',
+                tools: ['Illustrator', 'Photoshop', 'InDesign', 'CorelDRAW'],
+                challenge: 'Develop a packaging visual identity that highlights Burger Lab products while maintaining attractive, consistent communication suited to graphic production.',
+                solution: 'Created a packaging visual proposal with strategic composition, consistent identity application, and graphic preparation for production and product presentation.',
                 button: 'View Details'
             }
         },
         details: {
-            client: 'Aster Atelier',
-            duration: { pt: '5 dias', en: '5 days' },
-            tools: ['Illustrator', 'Photoshop', 'InDesign'],
-            challenge: { pt: 'Equilibrar identidade premium com funcionalidade e produção imprime.', en: 'Balance premium identity with functionality and print production.' },
-            solution: { pt: 'Desenvolvi uma identidade visual consistente para diferentes aplicações e materiais.', en: 'I developed a consistent visual identity for multiple applications and materials.' },
-            images: ['images/03.png', 'images/graphic_design_example_new1.jpg']
+            client: 'Burger Lab',
+            duration: { pt: '3 dias', en: '3 days' },
+            tools: ['Illustrator', 'Photoshop', 'InDesign', 'CorelDRAW'],
+            challenge: { pt: 'Desenvolver uma identidade visual de embalagem capaz de destacar os produtos da Burger Lab, mantendo uma comunicação atrativa, consistente e adequada à produção gráfica.', en: 'Develop a packaging visual identity that highlights Burger Lab products while maintaining attractive, consistent communication suited to graphic production.' },
+            solution: { pt: 'Criação de uma proposta visual de embalagem com composição estratégica, aplicação consistente da identidade e preparação gráfica voltada à produção e apresentação dos produtos.', en: 'Created a packaging visual proposal with strategic composition, consistent identity application, and graphic preparation for production and product presentation.' },
+            images: ['images/embalagem1.jpg']
         }
     },
     {
@@ -443,7 +443,7 @@ const portfolioData = [
     {
         id: 11,
         category: 'uiux',
-        image: 'images/03.jpg',
+        image: 'images/interface1.jpg',
         tags: ['Interface', 'Research', 'UX'],
         translations: {
             pt: {
@@ -451,11 +451,11 @@ const portfolioData = [
                 description: 'Design de interface para experiência de acesso e intro de produto com maior clareza e confiança.',
                 category: 'UI/UX Design',
                 tags: ['Interface', 'Research', 'UX'],
-                client: 'Orbit Lab',
-                duration: '8 dias',
-                tools: ['Figma', 'Illustrator', 'Adobe XD'],
-                challenge: 'Simplificar o primeiro contato do usuário com uma solução complexa.',
-                solution: 'Criei uma linguagem visual coerente com navegação intuitiva e chamadas estratégicas.',
+                client: 'Nexora Saas',
+                duration: '3h',
+                tools: ['Figma', 'CorelDRAW', 'VSCode'],
+                challenge: 'Criar uma interface de acesso clara e intuitiva, proporcionando uma experiência simples e eficiente para diferentes perfis de usuários.',
+                solution: 'Desenvolvimento de uma interface organizada e visualmente consistente, com hierarquia clara, navegação objetiva e foco na facilidade de uso e na experiência do usuário.',
                 button: 'Ver Detalhes'
             },
             en: {
@@ -463,21 +463,21 @@ const portfolioData = [
                 description: 'Interface design for a product access experience with greater clarity and user confidence.',
                 category: 'UI/UX Design',
                 tags: ['Interface', 'Research', 'UX'],
-                client: 'Orbit Lab',
-                duration: '8 days',
-                tools: ['Figma', 'Illustrator', 'Adobe XD'],
-                challenge: 'Simplify the user’s first contact with a complex solution.',
-                solution: 'I created a coherent visual language with intuitive navigation and strategic calls to action.',
+                client: 'Nexora Saas',
+                duration: '3h',
+                tools: ['Figma', 'CorelDRAW', 'VSCode'],
+                challenge: 'Create a clear and intuitive access interface, providing a simple and efficient experience for different user profiles.',
+                solution: 'Develop an organized and visually consistent interface with clear hierarchy, objective navigation, and a focus on ease of use and user experience.',
                 button: 'View Details'
             }
         },
         details: {
-            client: 'Orbit Lab',
-            duration: { pt: '8 dias', en: '8 days' },
-            tools: ['Figma', 'Illustrator', 'Adobe XD'],
-            challenge: { pt: 'Simplificar o primeiro contato do usuário com uma solução complexa.', en: 'Simplify the user’s first contact with a complex solution.' },
-            solution: { pt: 'Criei uma linguagem visual coerente com navegação intuitiva e chamadas estratégicas.', en: 'I created a coherent visual language with intuitive navigation and strategic calls to action.' },
-            images: ['images/03.jpg', 'images/01.png']
+            client: 'Nexora Saas',
+            duration: { pt: '3h', en: '3h' },
+            tools: ['Figma', 'CorelDRAW', 'VSCode'],
+            challenge: { pt: 'Criar uma interface de acesso clara e intuitiva, proporcionando uma experiência simples e eficiente para diferentes perfis de usuários.', en: 'Create a clear and intuitive access interface, providing a simple and efficient experience for different user profiles.' },
+            solution: { pt: 'Desenvolvimento de uma interface organizada e visualmente consistente, com hierarquia clara, navegação objetiva e foco na facilidade de uso e na experiência do usuário.', en: 'Develop an organized and visually consistent interface with clear hierarchy, objective navigation, and a focus on ease of use and user experience.' },
+            images: ['images/interface1.jpg', 'images/interface2.jpg']
         }
     },
     {
@@ -908,6 +908,9 @@ class Portfolio {
             const localizedItem = this.getLocalizedItem(item, lang);
             portfolioItem.querySelector('.portfolio-title').textContent = localizedItem.title;
             portfolioItem.querySelector('.portfolio-description').textContent = localizedItem.description;
+            portfolioItem.querySelector('.portfolio-overlay .btn').textContent = localizedItem.button;
+            portfolioItem.querySelector('.portfolio-tags').innerHTML = localizedItem.tags
+                .map(tag => `<span class="portfolio-tag">${tag}</span>`).join('');
         });
     }
 
@@ -1235,6 +1238,7 @@ class App {
         this.mobileMenu = new MobileMenu();
         this.navigation = new Navigation();
         this.portfolio = new Portfolio();
+        window.portfolio = this.portfolio;
         this.contactForm = new ContactForm();
         this.socialShare = new SocialShare();
         this.scrollAnimations = new ScrollAnimations();
