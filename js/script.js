@@ -403,7 +403,7 @@ const portfolioData = [
     {
         id: 10,
         category: 'graphic',
-        image: 'images/02.jpg',
+        image: 'images/campanha1.jpg',
         tags: ['Art Direction', 'Campaign', 'Brand'],
         translations: {
             pt: {
@@ -437,7 +437,7 @@ const portfolioData = [
             tools: ['Photoshop', 'Illustrator', 'Figma'],
             challenge: { pt: 'Unificar identidade, narrativa e diferentes formatos em uma campanha coesa.', en: 'Unify identity, narrative, and multiple formats into a cohesive campaign.' },
             solution: { pt: 'Desenvolvi um sistema visual modular com aplicação em web, redes e materiais digitais.', en: 'I created a modular visual system with application across web, social, and digital materials.' },
-            images: ['images/02.jpg', 'images/graphic_design_example_new2.jpg']
+            images: ['images/campanha1.jpg']
         }
     },
     {
@@ -483,7 +483,7 @@ const portfolioData = [
     {
         id: 12,
         category: 'graphic',
-        image: 'images/graphic_design_example_new1.jpg',
+        image: 'images/poster1.jpg',
         tags: ['Poster', 'Creative', 'Art'],
         translations: {
             pt: {
@@ -517,7 +517,7 @@ const portfolioData = [
             tools: ['Photoshop', 'Illustrator', 'Figma'],
             challenge: { pt: 'Criar uma peça marcante e memorável para divulgação visual.', en: 'Create a memorable piece for visual promotion.' },
             solution: { pt: 'Apliquei sobreposição, contrastes e uma composição experimental para gerar atenção imediata.', en: 'I used overlays, contrast, and an experimental composition to create immediate attention.' },
-            images: ['images/graphic_design_example_new1.jpg', 'images/02.png']
+            images: ['images/poster1.jpg']
         }
     }
 ];
