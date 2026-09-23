@@ -901,8 +901,10 @@ section {
 
 .logo-track {
     display: flex;
-    animation: marquee 27s linear infinite;
+    animation: marquee 10s linear infinite;
     gap: 3rem;
+    touch-action: pan-y;
+    user-select: none;
 }
 
 .logo-item {

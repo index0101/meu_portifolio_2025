@@ -1194,27 +1194,54 @@ class LogoCarousel {
         const logoTrack = document.querySelector('.logo-track');
         if (!logoTrack) return;
 
-        // Pause animation on hover
-        logoTrack.addEventListener('mouseenter', () => {
-            logoTrack.style.animationPlayState = 'paused';
-        });
-
-        logoTrack.addEventListener('mouseleave', () => {
-            logoTrack.style.animationPlayState = 'running';
-        });
-
-        // Add touch support for mobile
         let startX = 0;
-        let scrollLeft = 0;
+        let startTranslateX = 0;
+        let isDragging = false;
 
-        logoTrack.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].pageX;
+        const getTranslateX = () => {
+            const transform = window.getComputedStyle(logoTrack).transform;
+            if (transform === 'none') return 0;
+            return new DOMMatrix(transform).m41;
+        };
+
+        const normalizeTranslateX = (translateX) => {
+            const loopWidth = logoTrack.scrollWidth / 2;
+            return ((translateX % loopWidth) + loopWidth) % loopWidth - loopWidth;
+        };
+
+        logoTrack.addEventListener('pointerdown', (event) => {
+            event.preventDefault();
+            startX = event.clientX;
+            startTranslateX = getTranslateX();
+            isDragging = true;
+            logoTrack.setPointerCapture(event.pointerId);
             logoTrack.style.animationPlayState = 'paused';
+            logoTrack.style.transform = `translateX(${startTranslateX}px)`;
         });
 
-        logoTrack.addEventListener('touchend', () => {
-            logoTrack.style.animationPlayState = 'running';
+        logoTrack.addEventListener('pointermove', (event) => {
+            if (!isDragging) return;
+            const translateX = normalizeTranslateX(startTranslateX + event.clientX - startX);
+            logoTrack.style.transform = `translateX(${translateX}px)`;
         });
+
+        const finishDrag = (event) => {
+            if (!isDragging) return;
+            isDragging = false;
+            if (logoTrack.hasPointerCapture(event.pointerId)) {
+                logoTrack.releasePointerCapture(event.pointerId);
+            }
+
+            const translateX = getTranslateX();
+            const loopWidth = logoTrack.scrollWidth / 2;
+            const progress = -translateX / loopWidth;
+            logoTrack.style.animationDelay = `-${progress * 10}s`;
+            logoTrack.style.transform = '';
+            logoTrack.style.animationPlayState = 'running';
+        };
+
+        logoTrack.addEventListener('pointerup', finishDrag);
+        logoTrack.addEventListener('pointercancel', finishDrag);
     }
 }
 
