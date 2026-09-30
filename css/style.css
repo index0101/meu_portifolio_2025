@@ -350,6 +350,16 @@ body::before {
     background-clip: text;
 }
 
+.hero-role {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+    max-width: 560px;
+}
+
 .hero-subtitle {
     font-size: var(--font-size-xl);
     color: var(--text-secondary);
@@ -555,6 +565,17 @@ section {
     line-height: 1.8;
 }
 
+.about-inline-tagline {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.8;
+    padding: 1rem 1.25rem;
+    border-left: 3px solid var(--accent-primary);
+    background: rgba(139, 92, 246, 0.06);
+    border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+}
+
 /* Botão Vamos Conversar na seção About */
 .about .btn-primary {
     display: inline-flex;           /* mesmo display do Hero */
@@ -674,6 +695,68 @@ section {
     background: var(--accent-gradient);
     color: white;
     transform: scale(1.05);
+}
+
+/* Services Section */
+.services {
+    background: var(--bg-secondary);
+    position: relative;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.service-card {
+    padding: 1.75rem 1.5rem;
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--glass-shadow);
+    background: rgba(255, 255, 255, 0.04);
+    transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-fast);
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--glass-shadow), var(--accent-glow);
+    border-color: rgba(139, 92, 246, 0.35);
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.service-index {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background: var(--accent-gradient);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.service-title {
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.service-description {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: var(--font-size-base);
 }
 
 /* Portfolio Section */
@@ -1493,6 +1576,10 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .hero-main-image {
         width: min(100%, 420px);
         max-height: 280px;
@@ -1580,6 +1667,10 @@ section {
     .portfolio-grid {
         display: flex;
         gap: 1rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
     }
 
     .portfolio-item {
